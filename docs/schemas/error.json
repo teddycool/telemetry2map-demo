@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "version", "message_id", "code", "message"],
+  "properties": {
+    "type": {"const": "error"},
+    "version": {"const": 1},
+    "message_id": {"type": ["string", "null"]},
+    "code": {
+      "type": "string",
+      "enum": ["invalid_json", "invalid_payload", "unsupported_version", "future_timestamp", "capacity_exceeded", "unsupported_message"]
+    },
+    "message": {"type": "string"}
+  }
+}

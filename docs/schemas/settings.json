@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["trace_mode", "trace_seconds", "trace_samples", "stale_after_seconds"],
+  "properties": {
+    "trace_mode": {"type": "string", "enum": ["seconds", "samples"]},
+    "trace_seconds": {"type": "integer", "minimum": 1},
+    "trace_samples": {"type": "integer", "minimum": 1},
+    "stale_after_seconds": {"type": "integer", "minimum": 1}
+  }
+}

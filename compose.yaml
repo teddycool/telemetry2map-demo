@@ -1,0 +1,57 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: truckmap-app:latest
+    environment:
+      GUNICORN_BIND: 0.0.0.0:8000
+      GUNICORN_WORKERS: ${GUNICORN_WORKERS:-1}
+      GUNICORN_THREADS: ${GUNICORN_THREADS:-32}
+      TRACE_MODE: ${TRACE_MODE:-seconds}
+      TRACE_SECONDS: ${TRACE_SECONDS:-300}
+      TRACE_SAMPLES: ${TRACE_SAMPLES:-300}
+      STALE_AFTER_SECONDS: ${STALE_AFTER_SECONDS:-15}
+      MAX_MESSAGE_BYTES: ${MAX_MESSAGE_BYTES:-65536}
+      MAX_FUTURE_SKEW_SECONDS: ${MAX_FUTURE_SKEW_SECONDS:-30}
+      MAX_TRUCKS: ${MAX_TRUCKS:-100}
+      HARD_TRACE_CAP: ${HARD_TRACE_CAP:-3600}
+    ports:
+      - "${HOST_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthz"]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+
+  simulator:
+    image: truckmap-app:latest
+    command: ["python", "-m", "simulator.main"]
+    environment:
+      SIM_INGEST_URL: ws://app:8000/ws/v1/ingest
+      SIM_HEALTH_BASE: http://app:8000
+      SIM_TRUCK_COUNT: ${SIM_TRUCK_COUNT:-3}
+      SIM_INTERVAL_SECONDS: ${SIM_INTERVAL_SECONDS:-1.0}
+      SIM_SEED: ${SIM_SEED:-42}
+    depends_on:
+      app:
+        condition: service_healthy
+
+  tests:
+    profiles: ["test"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["pytest", "-q", "tests/unit", "tests/integration"]
+    environment:
+      PYTHONPATH: /app
+
+  browser-tests:
+    profiles: ["browser-test"]
+    image: mcr.microsoft.com/playwright/python:v1.48.0-jammy
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: ["bash", "-lc", "pip install --no-cache-dir -r requirements.txt && pytest -q tests/browser"]
+    environment:
+      PYTHONPATH: /app

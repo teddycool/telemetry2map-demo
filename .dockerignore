@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.git/
+.gitignore
+.env
+*.pyc
+*.pyo
+*.pyd
+.coverage
+htmlcov/
+node_modules/

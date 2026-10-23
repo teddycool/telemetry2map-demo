@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "version", "server_time"],
+  "properties": {
+    "type": {"const": "pong"},
+    "version": {"const": 1},
+    "server_time": {"type": "string"}
+  }
+}

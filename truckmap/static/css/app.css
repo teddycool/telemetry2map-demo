@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.layout {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: relative;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1200;
+}
+
+.status-group {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #aaa;
+  background: #eef;
+  font-size: 0.8rem;
+}
+
+.badge.muted {
+  background: #f2f2f2;
+}
+
+.map {
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+
+.details {
+  position: absolute;
+  top: 64px;
+  left: 8px;
+  z-index: 1100;
+  max-width: min(360px, 65vw);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 0.6rem;
+  line-height: 1.35;
+  white-space: pre-line;
+}
+
+.info-box {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 1100;
+  width: min(420px, calc(100vw - 16px));
+  max-height: 30vh;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.truck-label {
+  background: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 0.1rem 0.25rem;
+  font-size: 11px;
+}
+
+.truck-marker.stale {
+  filter: grayscale(100%);
+  opacity: 0.65;
+}
+
+@media (max-width: 780px) {
+  .toolbar {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    max-width: calc(100vw - 16px);
+  }
+}

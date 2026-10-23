@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "version", "server_instance_id", "revision", "truck"],
+  "properties": {
+    "type": {"const": "truck_updated"},
+    "version": {"const": 1},
+    "server_instance_id": {"type": "string"},
+    "revision": {"type": "integer", "minimum": 1},
+    "truck": {
+      "type": "object"
+    }
+  }
+}

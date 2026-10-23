@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["server_instance_id", "revision", "server_time", "settings", "trucks"],
+  "properties": {
+    "server_instance_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 0},
+    "server_time": {"type": "string"},
+    "settings": {"$ref": "./settings.json"},
+    "trucks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["truck_id", "timestamp", "received_at", "position", "speed_kmh", "heading_deg", "info", "trace"],
+        "properties": {
+          "truck_id": {"type": "string"},
+          "timestamp": {"type": "string"},
+          "received_at": {"type": "string"},
+          "position": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["latitude", "longitude"],
+            "properties": {
+              "latitude": {"type": "number"},
+              "longitude": {"type": "number"}
+            }
+          },
+          "speed_kmh": {"type": "number"},
+          "heading_deg": {"type": "number"},
+          "info": {"type": "array", "items": {"type": "string"}},
+          "trace": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["latitude", "longitude", "timestamp", "received_at"],
+              "properties": {
+                "latitude": {"type": "number"},
+                "longitude": {"type": "number"},
+                "timestamp": {"type": "string"},
+                "received_at": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

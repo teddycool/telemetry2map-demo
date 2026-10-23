@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "version", "message_id", "truck_id", "status", "revision", "received_at"],
+  "properties": {
+    "type": {"const": "ack"},
+    "version": {"const": 1},
+    "message_id": {"type": "string"},
+    "truck_id": {"type": "string"},
+    "status": {"type": "string", "enum": ["accepted", "ignored"]},
+    "reason": {"type": "string"},
+    "revision": {"type": "integer", "minimum": 0},
+    "received_at": {"type": "string"}
+  }
+}

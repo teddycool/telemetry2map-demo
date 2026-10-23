@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Truck Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/leaflet.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="toolbar">
+        <div class="status-group">
+          <span id="ws-status" class="badge">Connecting…</span>
+          <span id="event-status" class="badge muted">No data yet</span>
+        </div>
+        <label>
+          Truck
+          <select id="truck-select"></select>
+        </label>
+        <button id="follow-btn" type="button">Follow truck</button>
+        <label>
+          Retention mode
+          <select id="trace-mode">
+            <option value="seconds">seconds</option>
+            <option value="samples">samples</option>
+          </select>
+        </label>
+        <label>
+          Seconds
+          <input id="trace-seconds" type="number" min="1" step="1" />
+        </label>
+        <label>
+          Samples
+          <input id="trace-samples" type="number" min="1" step="1" />
+        </label>
+        <button id="save-settings" type="button">Apply retention</button>
+      </header>
+      <section id="map" class="map"></section>
+      <aside id="details" class="details">No truck selected.</aside>
+      <aside id="info-box" class="info-box"></aside>
+    </main>
+
+    <script>
+      window.TRUCKMAP_CONFIG = {
+        tileUrl: {{ tile_url|tojson }},
+        tileAttribution: {{ tile_attribution|tojson }},
+        tileMaxZoom: {{ tile_max_zoom|tojson }}
+      };
+    </script>
+    <script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>
