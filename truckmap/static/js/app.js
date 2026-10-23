@@ -319,6 +319,30 @@ async function loadInitialHttpState() {
   }
 }
 
+async function syncHttpStateFallback() {
+  try {
+    const res = await fetch("/api/v1/state", { cache: "no-store" });
+    if (!res.ok) return;
+    const state = await res.json();
+
+    if (!appState.serverInstanceId) {
+      setStateFromSnapshot(state);
+      appState.localStateLoaded = true;
+      setEventStatus("Loaded HTTP initial state");
+      return;
+    }
+
+    if (state.server_instance_id !== appState.serverInstanceId || state.revision > appState.revision) {
+      setStateFromSnapshot(state);
+      if (wsStatusEl.textContent !== "WebSocket connected") {
+        setEventStatus(`Refreshed via HTTP state @ rev ${state.revision}`);
+      }
+    }
+  } catch (_err) {
+    // ignored
+  }
+}
+
 async function saveSettings() {
   const body = {
     trace_mode: traceModeEl.value,
@@ -368,6 +392,10 @@ setInterval(() => {
     if (el) el.classList.toggle("stale", isStale(truck));
   }
 }, 1000);
+
+setInterval(() => {
+  void syncHttpStateFallback();
+}, 3000);
 
 void loadInitialHttpState();
 connectEvents();
