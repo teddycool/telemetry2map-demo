@@ -2,7 +2,12 @@
 
 [![CI](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml)
 
-A local-network truck telemetry demo using Flask + Flask-Sock native RFC6455 websockets.
+
+
+A local-network telemetry to map demo using Flask + Flask-Sock native RFC6455 websockets.
+
+![Webpage screenshot](docs/telemetry2map-demo.png)
+
 
 ## Easiest GitHub run (app + test-data replay + browser)
 
