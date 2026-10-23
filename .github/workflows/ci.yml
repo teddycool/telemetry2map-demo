@@ -24,4 +24,6 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Run unit and integration tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: pytest tests/unit tests/integration
