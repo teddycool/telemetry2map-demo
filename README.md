@@ -1,5 +1,7 @@
 # Live Truck Map (LAN v1)
 
+[![CI](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml)
+
 A local-network truck telemetry demo using Flask + Flask-Sock native RFC6455 websockets.
 
 ## Easiest GitHub run (app + test-data replay + browser)
