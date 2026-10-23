@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: truckmap-app:latest
+    image: map-app:latest
     environment:
       GUNICORN_BIND: 0.0.0.0:8000
       GUNICORN_WORKERS: ${GUNICORN_WORKERS:-1}
@@ -14,7 +14,7 @@ services:
       STALE_AFTER_SECONDS: ${STALE_AFTER_SECONDS:-15}
       MAX_MESSAGE_BYTES: ${MAX_MESSAGE_BYTES:-65536}
       MAX_FUTURE_SKEW_SECONDS: ${MAX_FUTURE_SKEW_SECONDS:-30}
-      MAX_TRUCKS: ${MAX_TRUCKS:-100}
+      MAX_ENTITIES: ${MAX_ENTITIES:-100}
       HARD_TRACE_CAP: ${HARD_TRACE_CAP:-3600}
     ports:
       - "${HOST_PORT:-8000}:8000"
@@ -25,12 +25,12 @@ services:
       retries: 20
 
   simulator:
-    image: truckmap-app:latest
+    image: map-app:latest
     command: ["python", "-m", "simulator.main"]
     environment:
       SIM_INGEST_URL: ws://app:8000/ws/v1/ingest
       SIM_HEALTH_BASE: http://app:8000
-      SIM_TRUCK_COUNT: ${SIM_TRUCK_COUNT:-3}
+      SIM_ENTITY_COUNT: ${SIM_ENTITY_COUNT:-3}
       SIM_INTERVAL_SECONDS: ${SIM_INTERVAL_SECONDS:-1.0}
       SIM_SEED: ${SIM_SEED:-42}
     depends_on:

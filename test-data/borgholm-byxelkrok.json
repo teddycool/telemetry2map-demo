@@ -3,7 +3,6 @@
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000000",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:00Z",
     "position": {
       "latitude": 56.879004,
@@ -16,13 +15,13 @@
       "Outside temperature: 9.5 °C",
       "Cabin temperature: 20.6 °C",
       "Distance remaining: 61.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000001",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:10Z",
     "position": {
       "latitude": 56.8809628,
@@ -35,13 +34,13 @@
       "Mobile link: fair",
       "Outside temperature: 13.2 °C",
       "Test code: 5850"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000002",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:20Z",
     "position": {
       "latitude": 56.8816492,
@@ -54,13 +53,13 @@
       "Outside temperature: 10.4 °C",
       "GPS satellites: 11",
       "Fuel level: 77.9 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000003",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:30Z",
     "position": {
       "latitude": 56.881425,
@@ -73,13 +72,13 @@
       "Outside temperature: 11.4 °C",
       "Test code: 7124",
       "Distance remaining: 61.32 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000004",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:40Z",
     "position": {
       "latitude": 56.8812728,
@@ -93,13 +92,13 @@
       "GPS satellites: 13",
       "Test code: 3506",
       "Distance travelled: 0.89 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000005",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:00:50Z",
     "position": {
       "latitude": 56.8807388,
@@ -111,13 +110,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 19.1 °C",
       "Outside temperature: 9.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000006",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:00Z",
     "position": {
       "latitude": 56.8801955,
@@ -131,13 +130,13 @@
       "Mobile link: fair",
       "Test code: 3542",
       "Fuel level: 77.8 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000007",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:10Z",
     "position": {
       "latitude": 56.8792491,
@@ -149,13 +148,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000008",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:20Z",
     "position": {
       "latitude": 56.8777161,
@@ -168,13 +167,13 @@
       "Distance travelled: 1.78 km",
       "Outside temperature: 13.9 °C",
       "Test code: 7637"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000009",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:30Z",
     "position": {
       "latitude": 56.8782182,
@@ -187,13 +186,13 @@
       "Test code: 3370",
       "Cabin temperature: 20.9 °C",
       "Distance remaining: 59.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000010",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:40Z",
     "position": {
       "latitude": 56.8789684,
@@ -207,13 +206,13 @@
       "Test code: 4125",
       "Fuel level: 77.7 %",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000011",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:01:50Z",
     "position": {
       "latitude": 56.8791747,
@@ -225,13 +224,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: excellent",
       "Cabin temperature: 20.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000012",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:00Z",
     "position": {
       "latitude": 56.8788696,
@@ -245,13 +244,13 @@
       "Mobile link: excellent",
       "Test code: 7064",
       "Distance remaining: 59.32 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000013",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:10Z",
     "position": {
       "latitude": 56.8782618,
@@ -264,13 +263,13 @@
       "Distance travelled: 2.89 km",
       "GPS satellites: 9",
       "Test code: 9241"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000014",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:20Z",
     "position": {
       "latitude": 56.8776684,
@@ -283,13 +282,13 @@
       "Fuel level: 77.6 %",
       "GPS satellites: 13",
       "Distance travelled: 3.11 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000015",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:30Z",
     "position": {
       "latitude": 56.8776193,
@@ -303,13 +302,13 @@
       "Fuel level: 77.6 %",
       "Distance remaining: 58.65 km",
       "Test code: 3960"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000016",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:40Z",
     "position": {
       "latitude": 56.877822,
@@ -322,13 +321,13 @@
       "Fuel level: 77.5 %",
       "Distance remaining: 58.43 km",
       "Outside temperature: 12.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000017",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:02:50Z",
     "position": {
       "latitude": 56.877806,
@@ -342,13 +341,13 @@
       "Test code: 1445",
       "Mobile link: good",
       "Fuel level: 77.5 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000018",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:00Z",
     "position": {
       "latitude": 56.8780368,
@@ -362,13 +361,13 @@
       "Outside temperature: 12.5 °C",
       "GPS satellites: 12",
       "Distance remaining: 57.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000019",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:10Z",
     "position": {
       "latitude": 56.8788958,
@@ -382,13 +381,13 @@
       "Mobile link: fair",
       "Distance remaining: 57.76 km",
       "GPS satellites: 13"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000020",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:20Z",
     "position": {
       "latitude": 56.8798813,
@@ -401,13 +400,13 @@
       "Distance remaining: 57.54 km",
       "GPS satellites: 12",
       "Test code: 8249"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000021",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:30Z",
     "position": {
       "latitude": 56.8811907,
@@ -420,13 +419,13 @@
       "Distance remaining: 57.32 km",
       "Distance travelled: 4.67 km",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000022",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:40Z",
     "position": {
       "latitude": 56.8828915,
@@ -440,13 +439,13 @@
       "Cabin temperature: 20.6 °C",
       "Distance remaining: 57.09 km",
       "Test code: 9238"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000023",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:03:50Z",
     "position": {
       "latitude": 56.8841856,
@@ -459,13 +458,13 @@
       "Distance remaining: 56.87 km",
       "Mobile link: excellent",
       "GPS satellites: 14"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000024",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:00Z",
     "position": {
       "latitude": 56.8857326,
@@ -479,13 +478,13 @@
       "Mobile link: fair",
       "Test code: 7263",
       "Cabin temperature: 20.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000025",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:10Z",
     "position": {
       "latitude": 56.8875224,
@@ -497,13 +496,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 5.56 km",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000026",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:20Z",
     "position": {
       "latitude": 56.8894576,
@@ -517,13 +516,13 @@
       "Distance travelled: 5.78 km",
       "Cabin temperature: 19.3 °C",
       "Fuel level: 77.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000027",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:30Z",
     "position": {
       "latitude": 56.8914529,
@@ -535,13 +534,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 77.2 %",
       "Distance remaining: 55.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000028",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:40Z",
     "position": {
       "latitude": 56.8934513,
@@ -553,13 +552,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: good",
       "GPS satellites: 13"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000029",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:04:50Z",
     "position": {
       "latitude": 56.8954494,
@@ -571,13 +570,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.1 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000030",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:00Z",
     "position": {
       "latitude": 56.8974455,
@@ -590,13 +589,13 @@
       "Distance travelled: 6.67 km",
       "Outside temperature: 14.0 °C",
       "Cabin temperature: 21.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000031",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:10Z",
     "position": {
       "latitude": 56.899434,
@@ -609,13 +608,13 @@
       "Test code: 5163",
       "Distance remaining: 55.09 km",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000032",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:20Z",
     "position": {
       "latitude": 56.9014209,
@@ -627,13 +626,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 12",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000033",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:30Z",
     "position": {
       "latitude": 56.9034036,
@@ -645,13 +644,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 54.65 km",
       "Test code: 4013"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000034",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:40Z",
     "position": {
       "latitude": 56.9053867,
@@ -664,13 +663,13 @@
       "Cabin temperature: 19.9 °C",
       "Distance remaining: 54.43 km",
       "Distance travelled: 7.56 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000035",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:05:50Z",
     "position": {
       "latitude": 56.9073532,
@@ -682,13 +681,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 7.78 km",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000036",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:00Z",
     "position": {
       "latitude": 56.9092096,
@@ -700,13 +699,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.8 °C",
       "Distance remaining: 53.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000037",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:10Z",
     "position": {
       "latitude": 56.9109015,
@@ -720,13 +719,13 @@
       "Cabin temperature: 21.9 °C",
       "Distance remaining: 53.76 km",
       "Fuel level: 76.9 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000038",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:20Z",
     "position": {
       "latitude": 56.9123416,
@@ -738,13 +737,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 10",
       "Fuel level: 76.9 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000039",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:30Z",
     "position": {
       "latitude": 56.913754,
@@ -758,13 +757,13 @@
       "GPS satellites: 10",
       "Test code: 9456",
       "Distance travelled: 8.67 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000040",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:40Z",
     "position": {
       "latitude": 56.9151615,
@@ -776,13 +775,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.7 °C",
       "Outside temperature: 10.2 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000041",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:06:50Z",
     "position": {
       "latitude": 56.9165689,
@@ -794,13 +793,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 1783",
       "Distance remaining: 52.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000042",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:00Z",
     "position": {
       "latitude": 56.9179766,
@@ -814,13 +813,13 @@
       "Fuel level: 76.8 %",
       "Distance travelled: 9.33 km",
       "Cabin temperature: 19.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000043",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:10Z",
     "position": {
       "latitude": 56.9193841,
@@ -832,13 +831,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 10.2 °C",
       "Distance travelled: 9.56 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000044",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:20Z",
     "position": {
       "latitude": 56.920856,
@@ -850,13 +849,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.4 °C",
       "Fuel level: 76.7 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000045",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:30Z",
     "position": {
       "latitude": 56.9223876,
@@ -868,13 +867,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 12",
       "Distance remaining: 51.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000046",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:40Z",
     "position": {
       "latitude": 56.9239963,
@@ -886,13 +885,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 51.76 km",
       "Fuel level: 76.7 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000047",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:07:50Z",
     "position": {
       "latitude": 56.925664,
@@ -906,13 +905,13 @@
       "Distance travelled: 10.44 km",
       "Distance remaining: 51.54 km",
       "Test code: 6650"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000048",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:00Z",
     "position": {
       "latitude": 56.9273732,
@@ -925,13 +924,13 @@
       "Mobile link: good",
       "Test code: 2560",
       "Distance travelled: 10.67 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000049",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:10Z",
     "position": {
       "latitude": 56.9291411,
@@ -943,13 +942,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 51.09 km",
       "Cabin temperature: 19.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000050",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:20Z",
     "position": {
       "latitude": 56.930911,
@@ -961,13 +960,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "Cabin temperature: 21.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000051",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:30Z",
     "position": {
       "latitude": 56.9326818,
@@ -981,13 +980,13 @@
       "Distance remaining: 50.65 km",
       "Fuel level: 76.5 %",
       "Outside temperature: 13.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000052",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:40Z",
     "position": {
       "latitude": 56.9344476,
@@ -1001,13 +1000,13 @@
       "Distance travelled: 11.56 km",
       "Fuel level: 76.5 %",
       "GPS satellites: 9"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000053",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:08:50Z",
     "position": {
       "latitude": 56.9362288,
@@ -1019,13 +1018,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: good",
       "Cabin temperature: 19.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000054",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:00Z",
     "position": {
       "latitude": 56.9380606,
@@ -1038,13 +1037,13 @@
       "Mobile link: fair",
       "GPS satellites: 9",
       "Fuel level: 76.5 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000055",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:10Z",
     "position": {
       "latitude": 56.9399453,
@@ -1058,13 +1057,13 @@
       "Distance remaining: 49.76 km",
       "Distance travelled: 12.22 km",
       "Fuel level: 76.4 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000056",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:20Z",
     "position": {
       "latitude": 56.9418724,
@@ -1077,13 +1076,13 @@
       "Test code: 4279",
       "Distance remaining: 49.54 km",
       "Distance travelled: 12.44 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000057",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:30Z",
     "position": {
       "latitude": 56.9438226,
@@ -1097,13 +1096,13 @@
       "Mobile link: good",
       "Distance remaining: 49.32 km",
       "GPS satellites: 15"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000058",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:40Z",
     "position": {
       "latitude": 56.9457872,
@@ -1115,13 +1114,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 76.3 %",
       "Outside temperature: 10.2 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000059",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:09:50Z",
     "position": {
       "latitude": 56.9477499,
@@ -1135,13 +1134,13 @@
       "GPS satellites: 14",
       "Distance remaining: 48.87 km",
       "Fuel level: 76.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000060",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:00Z",
     "position": {
       "latitude": 56.9496864,
@@ -1153,13 +1152,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 76.3 %",
       "Cabin temperature: 21.0 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000061",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:10Z",
     "position": {
       "latitude": 56.9514842,
@@ -1171,13 +1170,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.1 °C",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000062",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:20Z",
     "position": {
       "latitude": 56.9530388,
@@ -1191,13 +1190,13 @@
       "GPS satellites: 11",
       "Fuel level: 76.2 %",
       "Outside temperature: 11.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000063",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:30Z",
     "position": {
       "latitude": 56.954504,
@@ -1209,13 +1208,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 76.2 %",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000064",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:40Z",
     "position": {
       "latitude": 56.9559692,
@@ -1228,13 +1227,13 @@
       "Cabin temperature: 20.5 °C",
       "Fuel level: 76.2 %",
       "Distance travelled: 14.22 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000065",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:10:50Z",
     "position": {
       "latitude": 56.9574316,
@@ -1248,13 +1247,13 @@
       "Test code: 4093",
       "Fuel level: 76.1 %",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000066",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:00Z",
     "position": {
       "latitude": 56.9588983,
@@ -1268,13 +1267,13 @@
       "GPS satellites: 11",
       "Mobile link: excellent",
       "Distance remaining: 47.32 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000067",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:10Z",
     "position": {
       "latitude": 56.9603754,
@@ -1288,13 +1287,13 @@
       "Distance remaining: 47.09 km",
       "Outside temperature: 9.6 °C",
       "Test code: 7343"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000068",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:20Z",
     "position": {
       "latitude": 56.9620059,
@@ -1308,13 +1307,13 @@
       "Mobile link: excellent",
       "Test code: 8944",
       "GPS satellites: 11"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000069",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:30Z",
     "position": {
       "latitude": 56.9637751,
@@ -1326,13 +1325,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 15.33 km",
       "Test code: 8454"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000070",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:40Z",
     "position": {
       "latitude": 56.965637,
@@ -1344,13 +1343,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 12.5 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000071",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:11:50Z",
     "position": {
       "latitude": 56.9675693,
@@ -1362,13 +1361,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 8.7 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000072",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:00Z",
     "position": {
       "latitude": 56.9695214,
@@ -1381,13 +1380,13 @@
       "GPS satellites: 14",
       "Distance remaining: 45.98 km",
       "Fuel level: 75.9 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000073",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:10Z",
     "position": {
       "latitude": 56.9714757,
@@ -1399,13 +1398,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 45.76 km",
       "Outside temperature: 13.6 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000074",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:20Z",
     "position": {
       "latitude": 56.9734279,
@@ -1419,13 +1418,13 @@
       "Distance travelled: 16.44 km",
       "Distance remaining: 45.54 km",
       "Outside temperature: 8.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000075",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:30Z",
     "position": {
       "latitude": 56.9753603,
@@ -1439,13 +1438,13 @@
       "GPS satellites: 11",
       "Distance travelled: 16.67 km",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000076",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:40Z",
     "position": {
       "latitude": 56.9772664,
@@ -1458,13 +1457,13 @@
       "Distance travelled: 16.89 km",
       "Fuel level: 75.8 %",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000077",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:12:50Z",
     "position": {
       "latitude": 56.9791268,
@@ -1477,13 +1476,13 @@
       "Test code: 6085",
       "GPS satellites: 11",
       "Fuel level: 75.8 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000078",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:00Z",
     "position": {
       "latitude": 56.9809787,
@@ -1497,13 +1496,13 @@
       "Fuel level: 75.8 %",
       "Mobile link: fair",
       "Test code: 5706"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000079",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:10Z",
     "position": {
       "latitude": 56.9828325,
@@ -1515,13 +1514,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "Distance travelled: 17.56 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000080",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:20Z",
     "position": {
       "latitude": 56.9846864,
@@ -1533,13 +1532,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 13",
       "Distance remaining: 44.20 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000081",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:30Z",
     "position": {
       "latitude": 56.9865421,
@@ -1552,13 +1551,13 @@
       "Distance remaining: 43.98 km",
       "Distance travelled: 18.00 km",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000082",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:40Z",
     "position": {
       "latitude": 56.9883917,
@@ -1570,13 +1569,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 43.76 km",
       "GPS satellites: 11"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000083",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:13:50Z",
     "position": {
       "latitude": 56.9901977,
@@ -1589,13 +1588,13 @@
       "Fuel level: 75.6 %",
       "Outside temperature: 10.2 °C",
       "Test code: 9447"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000084",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:00Z",
     "position": {
       "latitude": 56.991948,
@@ -1608,13 +1607,13 @@
       "Mobile link: excellent",
       "Fuel level: 75.6 %",
       "Distance remaining: 43.32 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000085",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:10Z",
     "position": {
       "latitude": 56.9936507,
@@ -1627,13 +1626,13 @@
       "Cabin temperature: 21.3 °C",
       "Distance remaining: 43.09 km",
       "Distance travelled: 18.89 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000086",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:20Z",
     "position": {
       "latitude": 56.9952901,
@@ -1645,13 +1644,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 75.5 %",
       "Test code: 3176"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000087",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:30Z",
     "position": {
       "latitude": 56.996847,
@@ -1663,13 +1662,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 10.7 °C",
       "GPS satellites: 14"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000088",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:40Z",
     "position": {
       "latitude": 56.9983563,
@@ -1682,13 +1681,13 @@
       "GPS satellites: 12",
       "Distance travelled: 19.56 km",
       "Outside temperature: 8.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000089",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:14:50Z",
     "position": {
       "latitude": 56.9998015,
@@ -1702,13 +1701,13 @@
       "Cabin temperature: 21.5 °C",
       "Fuel level: 75.4 %",
       "Test code: 6692"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000090",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:00Z",
     "position": {
       "latitude": 57.0012195,
@@ -1722,13 +1721,13 @@
       "Distance remaining: 41.98 km",
       "Mobile link: fair",
       "Test code: 6426"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000091",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:10Z",
     "position": {
       "latitude": 57.0026345,
@@ -1741,13 +1740,13 @@
       "GPS satellites: 11",
       "Fuel level: 75.4 %",
       "Cabin temperature: 20.1 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000092",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:20Z",
     "position": {
       "latitude": 57.0040494,
@@ -1761,13 +1760,13 @@
       "Distance travelled: 20.44 km",
       "GPS satellites: 12",
       "Test code: 1369"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000093",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:30Z",
     "position": {
       "latitude": 57.0055456,
@@ -1780,13 +1779,13 @@
       "Cabin temperature: 19.2 °C",
       "Distance travelled: 20.67 km",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000094",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:40Z",
     "position": {
       "latitude": 57.0071377,
@@ -1798,13 +1797,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 7619",
       "Fuel level: 75.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000095",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:15:50Z",
     "position": {
       "latitude": 57.0088073,
@@ -1816,13 +1815,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 75.3 %",
       "Distance remaining: 40.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000096",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:00Z",
     "position": {
       "latitude": 57.0105622,
@@ -1834,13 +1833,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 75.2 %",
       "GPS satellites: 10"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000097",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:10Z",
     "position": {
       "latitude": 57.0123441,
@@ -1852,13 +1851,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 5795",
       "Outside temperature: 12.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000098",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:20Z",
     "position": {
       "latitude": 57.0141358,
@@ -1871,13 +1870,13 @@
       "Distance remaining: 40.20 km",
       "Cabin temperature: 20.8 °C",
       "Distance travelled: 21.78 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000099",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:30Z",
     "position": {
       "latitude": 57.0158992,
@@ -1889,13 +1888,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 39.98 km",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000100",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:40Z",
     "position": {
       "latitude": 57.017629,
@@ -1907,13 +1906,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: good",
       "Distance remaining: 39.76 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000101",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:16:50Z",
     "position": {
       "latitude": 57.0192594,
@@ -1925,13 +1924,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 13.6 °C",
       "Distance travelled: 22.44 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000102",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:00Z",
     "position": {
       "latitude": 57.0208993,
@@ -1944,13 +1943,13 @@
       "Distance travelled: 22.67 km",
       "Distance remaining: 39.32 km",
       "Outside temperature: 9.1 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000103",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:10Z",
     "position": {
       "latitude": 57.0226729,
@@ -1964,13 +1963,13 @@
       "Outside temperature: 13.0 °C",
       "Distance travelled: 22.89 km",
       "Distance remaining: 39.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000104",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:20Z",
     "position": {
       "latitude": 57.0245042,
@@ -1984,13 +1983,13 @@
       "Cabin temperature: 21.2 °C",
       "Distance travelled: 23.11 km",
       "Test code: 6820"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000105",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:30Z",
     "position": {
       "latitude": 57.0264019,
@@ -2003,13 +2002,13 @@
       "Outside temperature: 8.6 °C",
       "GPS satellites: 10",
       "Test code: 9509"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000106",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:40Z",
     "position": {
       "latitude": 57.0283016,
@@ -2021,13 +2020,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000107",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:17:50Z",
     "position": {
       "latitude": 57.030186,
@@ -2041,13 +2040,13 @@
       "Fuel level: 74.9 %",
       "Cabin temperature: 19.9 °C",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000108",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:00Z",
     "position": {
       "latitude": 57.0320529,
@@ -2061,13 +2060,13 @@
       "GPS satellites: 13",
       "Distance remaining: 37.98 km",
       "Test code: 9271"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000109",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:10Z",
     "position": {
       "latitude": 57.0338857,
@@ -2081,13 +2080,13 @@
       "Distance travelled: 24.22 km",
       "GPS satellites: 9",
       "Outside temperature: 8.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000110",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:20Z",
     "position": {
       "latitude": 57.0357177,
@@ -2100,13 +2099,13 @@
       "Mobile link: fair",
       "Distance travelled: 24.44 km",
       "Distance remaining: 37.54 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000111",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:30Z",
     "position": {
       "latitude": 57.0375868,
@@ -2119,13 +2118,13 @@
       "Test code: 7251",
       "GPS satellites: 12",
       "Outside temperature: 12.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000112",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:40Z",
     "position": {
       "latitude": 57.0394587,
@@ -2137,13 +2136,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 37.09 km",
       "Test code: 6370"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000113",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:18:50Z",
     "position": {
       "latitude": 57.0413751,
@@ -2156,13 +2155,13 @@
       "Fuel level: 74.8 %",
       "Mobile link: good",
       "Distance remaining: 36.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000114",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:00Z",
     "position": {
       "latitude": 57.0433009,
@@ -2176,13 +2175,13 @@
       "Distance remaining: 36.65 km",
       "Fuel level: 74.7 %",
       "Outside temperature: 13.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000115",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:10Z",
     "position": {
       "latitude": 57.0452517,
@@ -2195,13 +2194,13 @@
       "Fuel level: 74.7 %",
       "GPS satellites: 10",
       "Distance travelled: 25.56 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000116",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:20Z",
     "position": {
       "latitude": 57.0472084,
@@ -2214,13 +2213,13 @@
       "Test code: 4196",
       "Outside temperature: 10.2 °C",
       "Distance remaining: 36.20 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000117",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:30Z",
     "position": {
       "latitude": 57.0491653,
@@ -2232,13 +2231,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 16",
       "Outside temperature: 12.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000118",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:40Z",
     "position": {
       "latitude": 57.0511237,
@@ -2250,13 +2249,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 26.22 km",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000119",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:19:50Z",
     "position": {
       "latitude": 57.0530778,
@@ -2269,13 +2268,13 @@
       "Distance remaining: 35.54 km",
       "Fuel level: 74.6 %",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000120",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:00Z",
     "position": {
       "latitude": 57.0550306,
@@ -2289,13 +2288,13 @@
       "GPS satellites: 16",
       "Distance travelled: 26.67 km",
       "Cabin temperature: 21.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000121",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:10Z",
     "position": {
       "latitude": 57.0569559,
@@ -2309,13 +2308,13 @@
       "Mobile link: good",
       "Fuel level: 74.5 %",
       "Distance remaining: 35.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000122",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:20Z",
     "position": {
       "latitude": 57.0588145,
@@ -2329,13 +2328,13 @@
       "Outside temperature: 12.6 °C",
       "Fuel level: 74.5 %",
       "Cabin temperature: 19.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000123",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:30Z",
     "position": {
       "latitude": 57.0605824,
@@ -2348,13 +2347,13 @@
       "Distance remaining: 34.65 km",
       "Fuel level: 74.5 %",
       "GPS satellites: 10"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000124",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:40Z",
     "position": {
       "latitude": 57.0622465,
@@ -2367,13 +2366,13 @@
       "Outside temperature: 8.4 °C",
       "Distance travelled: 27.56 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000125",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:20:50Z",
     "position": {
       "latitude": 57.0638411,
@@ -2387,13 +2386,13 @@
       "Distance remaining: 34.20 km",
       "Fuel level: 74.4 %",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000126",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:00Z",
     "position": {
       "latitude": 57.0652723,
@@ -2406,13 +2405,13 @@
       "Outside temperature: 9.1 °C",
       "Mobile link: good",
       "Cabin temperature: 21.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000127",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:10Z",
     "position": {
       "latitude": 57.0665968,
@@ -2426,13 +2425,13 @@
       "Distance travelled: 28.22 km",
       "Mobile link: good",
       "Fuel level: 74.4 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000128",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:20Z",
     "position": {
       "latitude": 57.0678204,
@@ -2445,13 +2444,13 @@
       "Test code: 3949",
       "Outside temperature: 10.7 °C",
       "Distance travelled: 28.44 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000129",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:30Z",
     "position": {
       "latitude": 57.0690413,
@@ -2464,13 +2463,13 @@
       "Outside temperature: 12.7 °C",
       "Cabin temperature: 19.2 °C",
       "Fuel level: 74.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000130",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:40Z",
     "position": {
       "latitude": 57.070246,
@@ -2483,13 +2482,13 @@
       "Cabin temperature: 21.7 °C",
       "Mobile link: good",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000131",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:21:50Z",
     "position": {
       "latitude": 57.0714622,
@@ -2502,13 +2501,13 @@
       "Cabin temperature: 20.4 °C",
       "Distance travelled: 29.11 km",
       "Test code: 3033"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000132",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:00Z",
     "position": {
       "latitude": 57.0726701,
@@ -2522,13 +2521,13 @@
       "Distance remaining: 32.65 km",
       "Distance travelled: 29.33 km",
       "Fuel level: 74.2 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000133",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:10Z",
     "position": {
       "latitude": 57.0739037,
@@ -2540,13 +2539,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 5909",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000134",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:20Z",
     "position": {
       "latitude": 57.0751923,
@@ -2560,13 +2559,13 @@
       "Distance travelled: 29.78 km",
       "Fuel level: 74.2 %",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000135",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:30Z",
     "position": {
       "latitude": 57.0766167,
@@ -2578,13 +2577,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 31.98 km",
       "Distance travelled: 30.00 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000136",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:40Z",
     "position": {
       "latitude": 57.0781617,
@@ -2596,13 +2595,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 13.2 °C",
       "Distance remaining: 31.76 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000137",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:22:50Z",
     "position": {
       "latitude": 57.0798114,
@@ -2614,13 +2613,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 30.44 km",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000138",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:00Z",
     "position": {
       "latitude": 57.0815608,
@@ -2634,13 +2633,13 @@
       "Fuel level: 74.0 %",
       "GPS satellites: 15",
       "Test code: 6727"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000139",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:10Z",
     "position": {
       "latitude": 57.0833863,
@@ -2652,13 +2651,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.1 °C",
       "Distance remaining: 31.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000140",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:20Z",
     "position": {
       "latitude": 57.0852756,
@@ -2672,13 +2671,13 @@
       "GPS satellites: 11",
       "Outside temperature: 13.7 °C",
       "Fuel level: 74.0 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000141",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:30Z",
     "position": {
       "latitude": 57.0872062,
@@ -2692,13 +2691,13 @@
       "Distance travelled: 31.33 km",
       "Cabin temperature: 19.9 °C",
       "Test code: 1894"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000142",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:40Z",
     "position": {
       "latitude": 57.0891388,
@@ -2711,13 +2710,13 @@
       "Distance travelled: 31.56 km",
       "Test code: 1826",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000143",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:23:50Z",
     "position": {
       "latitude": 57.0910624,
@@ -2729,13 +2728,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 3600",
       "Outside temperature: 13.0 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000144",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:00Z",
     "position": {
       "latitude": 57.0929608,
@@ -2748,13 +2747,13 @@
       "Fuel level: 73.9 %",
       "Mobile link: fair",
       "Distance travelled: 32.00 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000145",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:10Z",
     "position": {
       "latitude": 57.0948093,
@@ -2766,13 +2765,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 9",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000146",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:20Z",
     "position": {
       "latitude": 57.0966036,
@@ -2786,13 +2785,13 @@
       "Distance remaining: 29.54 km",
       "Fuel level: 73.8 %",
       "Outside temperature: 10.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000147",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:30Z",
     "position": {
       "latitude": 57.0983375,
@@ -2804,13 +2803,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 29.32 km",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000148",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:40Z",
     "position": {
       "latitude": 57.1000162,
@@ -2823,13 +2822,13 @@
       "Cabin temperature: 19.8 °C",
       "Test code: 1261",
       "Outside temperature: 12.2 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000149",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:24:50Z",
     "position": {
       "latitude": 57.1016438,
@@ -2841,13 +2840,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 73.7 %",
       "Test code: 7873"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000150",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:00Z",
     "position": {
       "latitude": 57.1032165,
@@ -2860,13 +2859,13 @@
       "Test code: 8614",
       "Distance travelled: 33.33 km",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000151",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:10Z",
     "position": {
       "latitude": 57.1047359,
@@ -2880,13 +2879,13 @@
       "Distance travelled: 33.56 km",
       "GPS satellites: 11",
       "Outside temperature: 12.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000152",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:20Z",
     "position": {
       "latitude": 57.1061954,
@@ -2900,13 +2899,13 @@
       "GPS satellites: 15",
       "Fuel level: 73.6 %",
       "Outside temperature: 10.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000153",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:30Z",
     "position": {
       "latitude": 57.107592,
@@ -2920,13 +2919,13 @@
       "Test code: 6387",
       "GPS satellites: 15",
       "Fuel level: 73.6 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000154",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:40Z",
     "position": {
       "latitude": 57.1089657,
@@ -2939,13 +2938,13 @@
       "GPS satellites: 13",
       "Fuel level: 73.6 %",
       "Test code: 8326"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000155",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:25:50Z",
     "position": {
       "latitude": 57.1104152,
@@ -2957,13 +2956,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: excellent",
       "Cabin temperature: 19.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000156",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:00Z",
     "position": {
       "latitude": 57.1120238,
@@ -2975,13 +2974,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.6 °C",
       "Test code: 6110"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000157",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:10Z",
     "position": {
       "latitude": 57.1136813,
@@ -2994,13 +2993,13 @@
       "Distance travelled: 34.89 km",
       "GPS satellites: 10",
       "Distance remaining: 27.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000158",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:20Z",
     "position": {
       "latitude": 57.1153308,
@@ -3014,13 +3013,13 @@
       "Distance travelled: 35.11 km",
       "Fuel level: 73.5 %",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000159",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:30Z",
     "position": {
       "latitude": 57.1169504,
@@ -3032,13 +3031,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 73.4 %",
       "Cabin temperature: 19.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000160",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:40Z",
     "position": {
       "latitude": 57.1185331,
@@ -3052,13 +3051,13 @@
       "Fuel level: 73.4 %",
       "Distance travelled: 35.56 km",
       "Cabin temperature: 19.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000161",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:26:50Z",
     "position": {
       "latitude": 57.1201,
@@ -3071,13 +3070,13 @@
       "Fuel level: 73.4 %",
       "Outside temperature: 11.1 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000162",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:00Z",
     "position": {
       "latitude": 57.1216654,
@@ -3090,13 +3089,13 @@
       "Cabin temperature: 20.5 °C",
       "Distance remaining: 25.98 km",
       "Distance travelled: 36.00 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000163",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:10Z",
     "position": {
       "latitude": 57.1233203,
@@ -3108,13 +3107,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "Outside temperature: 10.0 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000164",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:20Z",
     "position": {
       "latitude": 57.1250673,
@@ -3127,13 +3126,13 @@
       "Test code: 5848",
       "GPS satellites: 10",
       "Distance travelled: 36.44 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000165",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:30Z",
     "position": {
       "latitude": 57.1269111,
@@ -3146,13 +3145,13 @@
       "Mobile link: excellent",
       "Distance travelled: 36.67 km",
       "Cabin temperature: 21.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000166",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:40Z",
     "position": {
       "latitude": 57.1287731,
@@ -3166,13 +3165,13 @@
       "Test code: 6491",
       "Mobile link: good",
       "GPS satellites: 10"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000167",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:27:50Z",
     "position": {
       "latitude": 57.1305921,
@@ -3185,13 +3184,13 @@
       "Cabin temperature: 21.9 °C",
       "Distance remaining: 24.87 km",
       "Outside temperature: 8.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000168",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:00Z",
     "position": {
       "latitude": 57.1322749,
@@ -3203,13 +3202,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.6 °C",
       "Fuel level: 73.2 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000169",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:10Z",
     "position": {
       "latitude": 57.1337927,
@@ -3221,13 +3220,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 11.8 °C",
       "Distance remaining: 24.43 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000170",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:20Z",
     "position": {
       "latitude": 57.1351039,
@@ -3241,13 +3240,13 @@
       "Test code: 1970",
       "GPS satellites: 10",
       "Distance remaining: 24.20 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000171",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:30Z",
     "position": {
       "latitude": 57.136161,
@@ -3259,13 +3258,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 10.9 °C",
       "Test code: 1187"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000172",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:40Z",
     "position": {
       "latitude": 57.1371341,
@@ -3277,13 +3276,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.5 °C",
       "Distance remaining: 23.76 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000173",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:28:50Z",
     "position": {
       "latitude": 57.1381537,
@@ -3295,13 +3294,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 8252",
       "Fuel level: 73.0 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000174",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:00Z",
     "position": {
       "latitude": 57.1391861,
@@ -3313,13 +3312,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 12",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000175",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:10Z",
     "position": {
       "latitude": 57.1403236,
@@ -3333,13 +3332,13 @@
       "GPS satellites: 14",
       "Fuel level: 73.0 %",
       "Distance remaining: 23.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000176",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:20Z",
     "position": {
       "latitude": 57.1415103,
@@ -3351,13 +3350,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 11.9 °C",
       "Cabin temperature: 19.1 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000177",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:30Z",
     "position": {
       "latitude": 57.142703,
@@ -3369,13 +3368,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 22.65 km",
       "Cabin temperature: 20.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000178",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:40Z",
     "position": {
       "latitude": 57.1439991,
@@ -3387,13 +3386,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 9921",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000179",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:29:50Z",
     "position": {
       "latitude": 57.1455858,
@@ -3407,13 +3406,13 @@
       "Outside temperature: 10.3 °C",
       "Test code: 8733",
       "Fuel level: 72.9 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000180",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:00Z",
     "position": {
       "latitude": 57.1473946,
@@ -3427,13 +3426,13 @@
       "Fuel level: 72.8 %",
       "GPS satellites: 13",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000181",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:10Z",
     "position": {
       "latitude": 57.1493466,
@@ -3447,13 +3446,13 @@
       "GPS satellites: 9",
       "Distance remaining: 21.76 km",
       "Outside temperature: 8.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000182",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:20Z",
     "position": {
       "latitude": 57.1513417,
@@ -3467,13 +3466,13 @@
       "Cabin temperature: 20.0 °C",
       "GPS satellites: 16",
       "Fuel level: 72.8 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000183",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:30Z",
     "position": {
       "latitude": 57.1533395,
@@ -3486,13 +3485,13 @@
       "GPS satellites: 12",
       "Cabin temperature: 21.3 °C",
       "Distance remaining: 21.32 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000184",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:40Z",
     "position": {
       "latitude": 57.1553372,
@@ -3506,13 +3505,13 @@
       "Distance travelled: 40.89 km",
       "Outside temperature: 10.7 °C",
       "GPS satellites: 10"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000185",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:30:50Z",
     "position": {
       "latitude": 57.1573346,
@@ -3524,13 +3523,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 20.87 km",
       "Outside temperature: 9.7 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000186",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:00Z",
     "position": {
       "latitude": 57.1593239,
@@ -3543,13 +3542,13 @@
       "Distance travelled: 41.33 km",
       "Cabin temperature: 19.2 °C",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000187",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:10Z",
     "position": {
       "latitude": 57.1612642,
@@ -3563,13 +3562,13 @@
       "Test code: 9854",
       "Cabin temperature: 20.3 °C",
       "Distance remaining: 20.43 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000188",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:20Z",
     "position": {
       "latitude": 57.1631082,
@@ -3581,13 +3580,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 19.2 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000189",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:30Z",
     "position": {
       "latitude": 57.1647047,
@@ -3601,13 +3600,13 @@
       "Outside temperature: 13.6 °C",
       "Distance travelled: 42.00 km",
       "Distance remaining: 19.98 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000190",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:40Z",
     "position": {
       "latitude": 57.166437,
@@ -3620,13 +3619,13 @@
       "Cabin temperature: 19.6 °C",
       "Test code: 1147",
       "Distance remaining: 19.76 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000191",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:31:50Z",
     "position": {
       "latitude": 57.1681488,
@@ -3639,13 +3638,13 @@
       "Distance remaining: 19.54 km",
       "Test code: 4665",
       "Cabin temperature: 20.6 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000192",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:00Z",
     "position": {
       "latitude": 57.1697256,
@@ -3659,13 +3658,13 @@
       "Cabin temperature: 21.2 °C",
       "Outside temperature: 9.6 °C",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000193",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:10Z",
     "position": {
       "latitude": 57.1711694,
@@ -3677,13 +3676,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 8.3 °C",
       "Test code: 7170"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000194",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:20Z",
     "position": {
       "latitude": 57.1726345,
@@ -3696,13 +3695,13 @@
       "Mobile link: good",
       "GPS satellites: 10",
       "Distance travelled: 43.11 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000195",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:30Z",
     "position": {
       "latitude": 57.1743323,
@@ -3715,13 +3714,13 @@
       "Cabin temperature: 19.8 °C",
       "Fuel level: 72.4 %",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000196",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:40Z",
     "position": {
       "latitude": 57.1762199,
@@ -3733,13 +3732,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: excellent",
       "Cabin temperature: 19.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000197",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:32:50Z",
     "position": {
       "latitude": 57.1782017,
@@ -3753,13 +3752,13 @@
       "Mobile link: fair",
       "Fuel level: 72.3 %",
       "Distance travelled: 43.78 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000198",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:00Z",
     "position": {
       "latitude": 57.1801956,
@@ -3771,13 +3770,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 17.98 km",
       "Test code: 1717"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000199",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:10Z",
     "position": {
       "latitude": 57.1821892,
@@ -3791,13 +3790,13 @@
       "Mobile link: good",
       "Distance remaining: 17.76 km",
       "Fuel level: 72.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000200",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:20Z",
     "position": {
       "latitude": 57.1841829,
@@ -3810,13 +3809,13 @@
       "Fuel level: 72.3 %",
       "Outside temperature: 8.7 °C",
       "Cabin temperature: 20.7 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000201",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:30Z",
     "position": {
       "latitude": 57.1861747,
@@ -3828,13 +3827,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: good",
       "Cabin temperature: 21.1 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000202",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:40Z",
     "position": {
       "latitude": 57.1881305,
@@ -3847,13 +3846,13 @@
       "Cabin temperature: 19.4 °C",
       "Fuel level: 72.2 %",
       "Distance remaining: 17.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000203",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:33:50Z",
     "position": {
       "latitude": 57.1900057,
@@ -3865,13 +3864,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 72.2 %",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000204",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:00Z",
     "position": {
       "latitude": 57.1917625,
@@ -3884,13 +3883,13 @@
       "Distance travelled: 45.33 km",
       "Outside temperature: 9.3 °C",
       "Fuel level: 72.1 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000205",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:10Z",
     "position": {
       "latitude": 57.1933593,
@@ -3903,13 +3902,13 @@
       "Mobile link: good",
       "Fuel level: 72.1 %",
       "GPS satellites: 9"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000206",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:20Z",
     "position": {
       "latitude": 57.1947848,
@@ -3921,13 +3920,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 45.78 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000207",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:30Z",
     "position": {
       "latitude": 57.1961858,
@@ -3941,13 +3940,13 @@
       "Fuel level: 72.1 %",
       "Cabin temperature: 19.9 °C",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000208",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:40Z",
     "position": {
       "latitude": 57.1977788,
@@ -3959,13 +3958,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 15.76 km",
       "GPS satellites: 11"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000209",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:34:50Z",
     "position": {
       "latitude": 57.1995925,
@@ -3977,13 +3976,13 @@
       "Status: driving to Byxelkrok",
       "Distance travelled: 46.44 km",
       "Fuel level: 72.0 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000210",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:00Z",
     "position": {
       "latitude": 57.2015458,
@@ -3995,13 +3994,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 8.7 °C",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000211",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:10Z",
     "position": {
       "latitude": 57.2035416,
@@ -4013,13 +4012,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.2 °C",
       "Test code: 1854"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000212",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:20Z",
     "position": {
       "latitude": 57.2055388,
@@ -4033,13 +4032,13 @@
       "Fuel level: 71.9 %",
       "Mobile link: fair",
       "Distance remaining: 14.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000213",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:30Z",
     "position": {
       "latitude": 57.2075356,
@@ -4052,13 +4051,13 @@
       "Test code: 1710",
       "Fuel level: 71.9 %",
       "Distance remaining: 14.65 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000214",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:40Z",
     "position": {
       "latitude": 57.2095322,
@@ -4072,13 +4071,13 @@
       "Cabin temperature: 19.4 °C",
       "Mobile link: fair",
       "Distance remaining: 14.43 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000215",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:35:50Z",
     "position": {
       "latitude": 57.2115055,
@@ -4092,13 +4091,13 @@
       "GPS satellites: 13",
       "Outside temperature: 13.6 °C",
       "Fuel level: 71.8 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000216",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:00Z",
     "position": {
       "latitude": 57.2134577,
@@ -4112,13 +4111,13 @@
       "Test code: 7922",
       "Distance remaining: 13.98 km",
       "GPS satellites: 11"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000217",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:10Z",
     "position": {
       "latitude": 57.2154397,
@@ -4131,13 +4130,13 @@
       "GPS satellites: 16",
       "Test code: 5259",
       "Distance remaining: 13.76 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000218",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:20Z",
     "position": {
       "latitude": 57.2174199,
@@ -4150,13 +4149,13 @@
       "Distance travelled: 48.44 km",
       "GPS satellites: 14",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000219",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:30Z",
     "position": {
       "latitude": 57.2194008,
@@ -4169,13 +4168,13 @@
       "Mobile link: excellent",
       "Fuel level: 71.7 %",
       "Cabin temperature: 21.3 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000220",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:40Z",
     "position": {
       "latitude": 57.221383,
@@ -4187,13 +4186,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 13.09 km",
       "Fuel level: 71.7 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000221",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:36:50Z",
     "position": {
       "latitude": 57.2233719,
@@ -4205,13 +4204,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 71.7 %",
       "Test code: 2879"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000222",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:00Z",
     "position": {
       "latitude": 57.2252971,
@@ -4223,13 +4222,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 19.3 °C",
       "Distance travelled: 49.33 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000223",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:10Z",
     "position": {
       "latitude": 57.2271719,
@@ -4241,13 +4240,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 20.4 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000224",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:20Z",
     "position": {
       "latitude": 57.2291255,
@@ -4259,13 +4258,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: good",
       "Distance travelled: 49.78 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000225",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:30Z",
     "position": {
       "latitude": 57.2310821,
@@ -4279,13 +4278,13 @@
       "Cabin temperature: 19.1 °C",
       "Mobile link: excellent",
       "Test code: 2960"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000226",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:40Z",
     "position": {
       "latitude": 57.2330373,
@@ -4298,13 +4297,13 @@
       "Mobile link: excellent",
       "Cabin temperature: 20.2 °C",
       "Test code: 6111"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000227",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:37:50Z",
     "position": {
       "latitude": 57.2347685,
@@ -4318,13 +4317,13 @@
       "Outside temperature: 9.7 °C",
       "Mobile link: fair",
       "Test code: 3065"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000228",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:00Z",
     "position": {
       "latitude": 57.2362481,
@@ -4336,13 +4335,13 @@
       "Status: driving to Byxelkrok",
       "Fuel level: 71.5 %",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000229",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:10Z",
     "position": {
       "latitude": 57.2380015,
@@ -4354,13 +4353,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 12.0 °C",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000230",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:20Z",
     "position": {
       "latitude": 57.2399517,
@@ -4373,13 +4372,13 @@
       "Mobile link: good",
       "Outside temperature: 8.3 °C",
       "GPS satellites: 11"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000231",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:30Z",
     "position": {
       "latitude": 57.2419265,
@@ -4393,13 +4392,13 @@
       "Distance remaining: 10.65 km",
       "Distance travelled: 51.33 km",
       "Fuel level: 71.4 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000232",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:40Z",
     "position": {
       "latitude": 57.2439067,
@@ -4412,13 +4411,13 @@
       "Distance travelled: 51.56 km",
       "Outside temperature: 10.5 °C",
       "GPS satellites: 12"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000233",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:38:50Z",
     "position": {
       "latitude": 57.2456216,
@@ -4432,13 +4431,13 @@
       "Fuel level: 71.3 %",
       "Distance travelled: 51.78 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000234",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:00Z",
     "position": {
       "latitude": 57.2474973,
@@ -4452,13 +4451,13 @@
       "Distance travelled: 52.00 km",
       "Outside temperature: 8.6 °C",
       "GPS satellites: 14"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000235",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:10Z",
     "position": {
       "latitude": 57.249464,
@@ -4470,13 +4469,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 9.76 km",
       "Fuel level: 71.3 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000236",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:20Z",
     "position": {
       "latitude": 57.2512796,
@@ -4488,13 +4487,13 @@
       "Status: driving to Byxelkrok",
       "Mobile link: fair",
       "Cabin temperature: 21.2 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000237",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:30Z",
     "position": {
       "latitude": 57.2528708,
@@ -4506,13 +4505,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 9.32 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000238",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:40Z",
     "position": {
       "latitude": 57.2544401,
@@ -4526,13 +4525,13 @@
       "Distance travelled: 52.89 km",
       "Test code: 5167",
       "Distance remaining: 9.09 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000239",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:39:50Z",
     "position": {
       "latitude": 57.2559305,
@@ -4545,13 +4544,13 @@
       "Fuel level: 71.1 %",
       "Test code: 7204",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000240",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:00Z",
     "position": {
       "latitude": 57.2573662,
@@ -4563,13 +4562,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 14",
       "Mobile link: good"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000241",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:10Z",
     "position": {
       "latitude": 57.2587208,
@@ -4583,13 +4582,13 @@
       "Cabin temperature: 19.7 °C",
       "Test code: 9557",
       "Distance travelled: 53.56 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000242",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:20Z",
     "position": {
       "latitude": 57.2590436,
@@ -4603,13 +4602,13 @@
       "Distance travelled: 53.78 km",
       "Outside temperature: 10.2 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000243",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:30Z",
     "position": {
       "latitude": 57.2599259,
@@ -4621,13 +4620,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 7859",
       "Fuel level: 71.0 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000244",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:40Z",
     "position": {
       "latitude": 57.2611126,
@@ -4641,13 +4640,13 @@
       "Cabin temperature: 21.9 °C",
       "GPS satellites: 9",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000245",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:40:50Z",
     "position": {
       "latitude": 57.2629054,
@@ -4659,13 +4658,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 13",
       "Test code: 7220"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000246",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:00Z",
     "position": {
       "latitude": 57.2646394,
@@ -4679,13 +4678,13 @@
       "Distance remaining: 7.32 km",
       "Test code: 9861",
       "Distance travelled: 54.67 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000247",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:10Z",
     "position": {
       "latitude": 57.2663326,
@@ -4698,13 +4697,13 @@
       "Distance remaining: 7.09 km",
       "Test code: 4705",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000248",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:20Z",
     "position": {
       "latitude": 57.2681402,
@@ -4717,13 +4716,13 @@
       "Outside temperature: 8.1 °C",
       "Cabin temperature: 20.4 °C",
       "GPS satellites: 10"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000249",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:30Z",
     "position": {
       "latitude": 57.2700805,
@@ -4737,13 +4736,13 @@
       "Test code: 8619",
       "Distance remaining: 6.65 km",
       "Distance travelled: 55.33 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000250",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:40Z",
     "position": {
       "latitude": 57.2719775,
@@ -4756,13 +4755,13 @@
       "Cabin temperature: 21.2 °C",
       "Distance remaining: 6.43 km",
       "Fuel level: 70.8 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000251",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:41:50Z",
     "position": {
       "latitude": 57.2739258,
@@ -4774,13 +4773,13 @@
       "Status: driving to Byxelkrok",
       "Outside temperature: 10.5 °C",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000252",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:00Z",
     "position": {
       "latitude": 57.2758589,
@@ -4793,13 +4792,13 @@
       "Cabin temperature: 19.4 °C",
       "Distance remaining: 5.98 km",
       "Outside temperature: 10.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000253",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:10Z",
     "position": {
       "latitude": 57.2777966,
@@ -4812,13 +4811,13 @@
       "Distance travelled: 56.22 km",
       "Test code: 3818",
       "Cabin temperature: 21.8 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000254",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:20Z",
     "position": {
       "latitude": 57.2796098,
@@ -4832,13 +4831,13 @@
       "Outside temperature: 12.2 °C",
       "Distance travelled: 56.44 km",
       "Test code: 4314"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000255",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:30Z",
     "position": {
       "latitude": 57.2815928,
@@ -4852,13 +4851,13 @@
       "Test code: 9016",
       "Distance travelled: 56.67 km",
       "Outside temperature: 8.6 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000256",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:40Z",
     "position": {
       "latitude": 57.2835693,
@@ -4870,13 +4869,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 6561",
       "Fuel level: 70.7 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000257",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:42:50Z",
     "position": {
       "latitude": 57.2855226,
@@ -4888,13 +4887,13 @@
       "Status: driving to Byxelkrok",
       "Test code: 5609",
       "Distance remaining: 4.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000258",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:00Z",
     "position": {
       "latitude": 57.2874965,
@@ -4908,13 +4907,13 @@
       "GPS satellites: 11",
       "Distance remaining: 4.65 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000259",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:10Z",
     "position": {
       "latitude": 57.2894854,
@@ -4927,13 +4926,13 @@
       "Outside temperature: 12.1 °C",
       "Distance travelled: 57.56 km",
       "Distance remaining: 4.43 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000260",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:20Z",
     "position": {
       "latitude": 57.2914801,
@@ -4945,13 +4944,13 @@
       "Status: driving to Byxelkrok",
       "Cabin temperature: 21.1 °C",
       "Distance travelled: 57.78 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000261",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:30Z",
     "position": {
       "latitude": 57.293376,
@@ -4963,13 +4962,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 3.98 km",
       "Cabin temperature: 20.2 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000262",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:40Z",
     "position": {
       "latitude": 57.2953507,
@@ -4981,13 +4980,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 11",
       "Fuel level: 70.5 %"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000263",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:43:50Z",
     "position": {
       "latitude": 57.297346,
@@ -5000,13 +4999,13 @@
       "Outside temperature: 8.4 °C",
       "Test code: 5051",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000264",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:00Z",
     "position": {
       "latitude": 57.2992478,
@@ -5019,13 +5018,13 @@
       "GPS satellites: 12",
       "Cabin temperature: 21.6 °C",
       "Outside temperature: 11.9 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000265",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:10Z",
     "position": {
       "latitude": 57.3010399,
@@ -5038,13 +5037,13 @@
       "Distance travelled: 58.89 km",
       "GPS satellites: 11",
       "Mobile link: fair"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000266",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:20Z",
     "position": {
       "latitude": 57.3029981,
@@ -5057,13 +5056,13 @@
       "Cabin temperature: 20.4 °C",
       "Fuel level: 70.4 %",
       "Distance remaining: 2.87 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000267",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:30Z",
     "position": {
       "latitude": 57.3049679,
@@ -5075,13 +5074,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 2.65 km",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000268",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:40Z",
     "position": {
       "latitude": 57.3069393,
@@ -5093,13 +5092,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 9",
       "Cabin temperature: 20.4 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000269",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:44:50Z",
     "position": {
       "latitude": 57.308813,
@@ -5113,13 +5112,13 @@
       "Fuel level: 70.3 %",
       "Test code: 4950",
       "GPS satellites: 13"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000270",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:00Z",
     "position": {
       "latitude": 57.3107575,
@@ -5132,13 +5131,13 @@
       "Distance remaining: 1.98 km",
       "Test code: 4608",
       "Distance travelled: 60.00 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000271",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:10Z",
     "position": {
       "latitude": 57.3127445,
@@ -5151,13 +5150,13 @@
       "Fuel level: 70.2 %",
       "GPS satellites: 13",
       "Outside temperature: 8.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000272",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:20Z",
     "position": {
       "latitude": 57.3145987,
@@ -5171,13 +5170,13 @@
       "Outside temperature: 13.5 °C",
       "Fuel level: 70.2 %",
       "Test code: 4385"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000273",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:30Z",
     "position": {
       "latitude": 57.3157325,
@@ -5189,13 +5188,13 @@
       "Status: driving to Byxelkrok",
       "Distance remaining: 1.32 km",
       "Test code: 6753"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000274",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:40Z",
     "position": {
       "latitude": 57.3172586,
@@ -5209,13 +5208,13 @@
       "Test code: 2401",
       "Distance travelled: 60.89 km",
       "Outside temperature: 8.5 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000275",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:45:50Z",
     "position": {
       "latitude": 57.3190891,
@@ -5228,13 +5227,13 @@
       "Mobile link: fair",
       "Fuel level: 70.1 %",
       "Distance travelled: 61.11 km"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000276",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:46:00Z",
     "position": {
       "latitude": 57.3209497,
@@ -5248,13 +5247,13 @@
       "Outside temperature: 11.8 °C",
       "GPS satellites: 16",
       "Cabin temperature: 21.0 °C"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000277",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:46:10Z",
     "position": {
       "latitude": 57.3222992,
@@ -5266,13 +5265,13 @@
       "Status: driving to Byxelkrok",
       "GPS satellites: 11",
       "Test code: 3067"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000278",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:46:20Z",
     "position": {
       "latitude": 57.3237108,
@@ -5285,13 +5284,13 @@
       "Distance remaining: 0.20 km",
       "Outside temperature: 13.1 °C",
       "Mobile link: excellent"
-    ]
+    ],
+    "entity_id": "car-01"
   },
   {
     "type": "telemetry",
     "version": 1,
     "message_id": "oland-car-01-000279",
-    "truck_id": "car-01",
     "timestamp": "2026-10-23T10:46:30Z",
     "position": {
       "latitude": 57.324821,
@@ -5303,6 +5302,7 @@
       "Status: arrived in Byxelkrok",
       "Distance remaining: 0.00 km",
       "GPS satellites: 16"
-    ]
+    ],
+    "entity_id": "car-01"
   }
 ]

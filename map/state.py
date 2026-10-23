@@ -15,7 +15,7 @@ from dateutil.parser import isoparse
 from .config import Defaults, Limits
 from .timeutil import to_utc_z, utc_now
 
-TRUCK_ID_PATTERN = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
+ENTITY_ID_PATTERN = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
 
 
 class ValidationError(Exception):
@@ -80,8 +80,8 @@ class TracePoint:
 
 
 @dataclass
-class TruckRecord:
-    truck_id: str
+class EntityRecord:
+    entity_id: str
     timestamp: datetime
     received_at: datetime
     latitude: float
@@ -93,7 +93,7 @@ class TruckRecord:
 
     def to_dict(self) -> dict[str, Any]:
         return {
-            "truck_id": self.truck_id,
+            "entity_id": self.entity_id,
             "timestamp": to_utc_z(self.timestamp),
             "received_at": to_utc_z(self.received_at),
             "position": {"latitude": self.latitude, "longitude": self.longitude},
@@ -125,7 +125,7 @@ class AppState:
             "trace_samples": defaults.trace_samples,
             "stale_after_seconds": defaults.stale_after_seconds,
         }
-        self._trucks: dict[str, TruckRecord] = {}
+        self._entities: dict[str, EntityRecord] = {}
         self._viewers: dict[str, Viewer] = {}
 
     @property
@@ -139,20 +139,20 @@ class AppState:
     def now(self) -> datetime:
         return self._clock()
 
-    def _trim_trace(self, truck: TruckRecord, now: datetime) -> bool:
-        before = len(truck.trace)
+    def _trim_trace(self, entity: EntityRecord, now: datetime) -> bool:
+        before = len(entity.trace)
         if self._settings["trace_mode"] == "seconds":
             cutoff = now - timedelta(seconds=self._settings["trace_seconds"])
-            truck.trace = [p for p in truck.trace if p.received_at >= cutoff]
+            entity.trace = [p for p in entity.trace if p.received_at >= cutoff]
         else:
-            truck.trace = truck.trace[-self._settings["trace_samples"] :]
-        truck.trace = truck.trace[-self._limits.hard_trace_cap :]
-        return len(truck.trace) != before
+            entity.trace = entity.trace[-self._settings["trace_samples"] :]
+        entity.trace = entity.trace[-self._limits.hard_trace_cap :]
+        return len(entity.trace) != before
 
     def _prune_all_locked(self, now: datetime) -> bool:
         changed = False
-        for truck in self._trucks.values():
-            changed = self._trim_trace(truck, now) or changed
+        for entity in self._entities.values():
+            changed = self._trim_trace(entity, now) or changed
         return changed
 
     def _state_dict_locked(self, now: datetime) -> dict[str, Any]:
@@ -161,7 +161,7 @@ class AppState:
             "revision": self._revision,
             "server_time": to_utc_z(now),
             "settings": dict(self._settings),
-            "trucks": [truck.to_dict() for truck in sorted(self._trucks.values(), key=lambda t: t.truck_id)],
+            "entities": [entity.to_dict() for entity in sorted(self._entities.values(), key=lambda t: t.entity_id)],
         }
 
     def settings_dict(self) -> dict[str, Any]:
@@ -214,19 +214,19 @@ class AppState:
         parsed = self._validate_payload(payload)
 
         with self._lock:
-            if parsed["truck_id"] not in self._trucks and len(self._trucks) >= self._limits.max_trucks:
-                raise ValidationError("capacity_exceeded", "maximum number of trucks reached", parsed["message_id"])
+            if parsed["entity_id"] not in self._entities and len(self._entities) >= self._limits.max_entities:
+                raise ValidationError("capacity_exceeded", "maximum number of entities reached", parsed["message_id"])
 
             if parsed["timestamp"] > now + timedelta(seconds=self._limits.max_future_skew_seconds):
                 raise ValidationError("future_timestamp", "timestamp is too far in the future", parsed["message_id"])
 
-            truck = self._trucks.get(parsed["truck_id"])
-            if truck and parsed["timestamp"] <= truck.timestamp:
+            entity = self._entities.get(parsed["entity_id"])
+            if entity and parsed["timestamp"] <= entity.timestamp:
                 ack = {
                     "type": "ack",
                     "version": 1,
                     "message_id": parsed["message_id"],
-                    "truck_id": parsed["truck_id"],
+                    "entity_id": parsed["entity_id"],
                     "status": "ignored",
                     "reason": "stale_timestamp",
                     "revision": self._revision,
@@ -234,8 +234,8 @@ class AppState:
                 }
                 return ack, None
 
-            new_truck = truck or TruckRecord(
-                truck_id=parsed["truck_id"],
+            new_entity = entity or EntityRecord(
+                entity_id=parsed["entity_id"],
                 timestamp=parsed["timestamp"],
                 received_at=now,
                 latitude=parsed["latitude"],
@@ -245,14 +245,14 @@ class AppState:
                 info=list(parsed["info"]),
             )
 
-            new_truck.timestamp = parsed["timestamp"]
-            new_truck.received_at = now
-            new_truck.latitude = parsed["latitude"]
-            new_truck.longitude = parsed["longitude"]
-            new_truck.speed_kmh = parsed["speed_kmh"]
-            new_truck.heading_deg = parsed["heading_deg"]
-            new_truck.info = list(parsed["info"])
-            new_truck.trace.append(
+            new_entity.timestamp = parsed["timestamp"]
+            new_entity.received_at = now
+            new_entity.latitude = parsed["latitude"]
+            new_entity.longitude = parsed["longitude"]
+            new_entity.speed_kmh = parsed["speed_kmh"]
+            new_entity.heading_deg = parsed["heading_deg"]
+            new_entity.info = list(parsed["info"])
+            new_entity.trace.append(
                 TracePoint(
                     latitude=parsed["latitude"],
                     longitude=parsed["longitude"],
@@ -260,21 +260,21 @@ class AppState:
                     received_at=now,
                 )
             )
-            self._trim_trace(new_truck, now)
-            self._trucks[parsed["truck_id"]] = new_truck
+            self._trim_trace(new_entity, now)
+            self._entities[parsed["entity_id"]] = new_entity
             self._revision += 1
             event = {
-                "type": "truck_updated",
+                "type": "entity_updated",
                 "version": 1,
                 "server_instance_id": self._instance_id,
                 "revision": self._revision,
-                "truck": new_truck.to_dict(),
+                "entity": new_entity.to_dict(),
             }
             ack = {
                 "type": "ack",
                 "version": 1,
                 "message_id": parsed["message_id"],
-                "truck_id": parsed["truck_id"],
+                "entity_id": parsed["entity_id"],
                 "status": "accepted",
                 "revision": self._revision,
                 "received_at": to_utc_z(now),
@@ -327,8 +327,8 @@ class AppState:
 
         _require_keys(
             payload,
-            allowed={"type", "version", "message_id", "truck_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"},
-            required={"type", "version", "message_id", "truck_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"},
+            allowed={"type", "version", "message_id", "entity_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"},
+            required={"type", "version", "message_id", "entity_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"},
         )
 
         if payload["type"] != "telemetry":
@@ -340,9 +340,9 @@ class AppState:
         if not isinstance(message_id, str) or not message_id.strip():
             raise ValidationError("invalid_payload", "message_id must be a non-empty string")
 
-        truck_id = payload["truck_id"]
-        if not isinstance(truck_id, str) or len(truck_id) > self._limits.max_truck_id_chars or not TRUCK_ID_PATTERN.match(truck_id):
-            raise ValidationError("invalid_payload", "truck_id format is invalid", message_id)
+        entity_id = payload["entity_id"]
+        if not isinstance(entity_id, str) or len(entity_id) > self._limits.max_entity_id_chars or not ENTITY_ID_PATTERN.match(entity_id):
+            raise ValidationError("invalid_payload", "entity_id format is invalid", message_id)
 
         timestamp = parse_rfc3339_utc(payload["timestamp"])
 
@@ -379,7 +379,7 @@ class AppState:
 
         return {
             "message_id": message_id,
-            "truck_id": truck_id,
+            "entity_id": entity_id,
             "timestamp": timestamp,
             "latitude": float(lat),
             "longitude": float(lon),

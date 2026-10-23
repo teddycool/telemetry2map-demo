@@ -2,20 +2,20 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": false,
-  "required": ["server_instance_id", "revision", "server_time", "settings", "trucks"],
+  "required": ["server_instance_id", "revision", "server_time", "settings", "entities"],
   "properties": {
     "server_instance_id": {"type": "string", "minLength": 1},
     "revision": {"type": "integer", "minimum": 0},
     "server_time": {"type": "string"},
     "settings": {"$ref": "./settings.json"},
-    "trucks": {
+    "entities": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["truck_id", "timestamp", "received_at", "position", "speed_kmh", "heading_deg", "info", "trace"],
+        "required": ["entity_id", "timestamp", "received_at", "position", "speed_kmh", "heading_deg", "info", "trace"],
         "properties": {
-          "truck_id": {"type": "string"},
+          "entity_id": {"type": "string"},
           "timestamp": {"type": "string"},
           "received_at": {"type": "string"},
           "position": {

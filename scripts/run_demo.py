@@ -74,7 +74,7 @@ def main() -> int:
     health_url = f"{app_url}/healthz"
     ws_url = f"ws://{args.host}:{args.port}/ws/v1/ingest"
     run_id = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    message_prefix = f"replay-car-01-{run_id}"
+    message_prefix = f"replay-entity-01-{run_id}"
 
     print("[1/4] Starting app container (docker compose up -d app)...")
     _run(["docker", "compose", "up", "--build", "-d", "app"], cwd=project_root)

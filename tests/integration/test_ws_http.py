@@ -24,7 +24,7 @@ def test_snapshot_then_live_update_and_stale_ignore(running_server):
                     "type": "telemetry",
                     "version": 1,
                     "message_id": "m-1",
-                    "truck_id": "truck-a",
+                    "entity_id": "entity-a",
                     "timestamp": "2026-10-23T12:34:56.123Z",
                     "position": {"latitude": 57.7201, "longitude": 16.9402},
                     "speed_kmh": 42.5,
@@ -37,7 +37,7 @@ def test_snapshot_then_live_update_and_stale_ignore(running_server):
                 assert ack["status"] == "accepted"
 
                 event = json.loads(await asyncio.wait_for(events_ws.recv(), timeout=3))
-                assert event["type"] == "truck_updated"
+                assert event["type"] == "entity_updated"
                 assert event["revision"] == start_rev + 1
 
                 await ingest_ws.send(json.dumps(payload))
@@ -64,7 +64,7 @@ def test_invalid_json_then_valid_message_connection_stays_open(running_server):
                 "type": "telemetry",
                 "version": 1,
                 "message_id": "ok-1",
-                "truck_id": "truck-b",
+                "entity_id": "entity-b",
                 "timestamp": "2026-10-23T12:35:56.123Z",
                 "position": {"latitude": 57.7201, "longitude": 16.9402},
                 "speed_kmh": 12.5,

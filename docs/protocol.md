@@ -20,7 +20,7 @@ Validation notes:
 - `timestamp` must be RFC3339 with explicit offset (`Z` or numeric offset).
 - `heading_deg` is `[0,360)`; `360` is invalid.
 - Booleans are rejected for numeric fields.
-- Per truck, timestamp must be strictly newer than last accepted timestamp.
+- Per entity, timestamp must be strictly newer than last accepted timestamp.
 - Future skew beyond `MAX_FUTURE_SKEW_SECONDS` is rejected.
 
 ### Server replies
@@ -28,13 +28,13 @@ Validation notes:
 Accepted ACK:
 
 ```json
-{"type":"ack","version":1,"message_id":"sim-a-000042","truck_id":"truck-a","status":"accepted","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
+{"type":"ack","version":1,"message_id":"sim-a-000042","entity_id":"entity-a","status":"accepted","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
 ```
 
 Ignored stale/duplicate timestamp:
 
 ```json
-{"type":"ack","version":1,"message_id":"sim-a-000042","truck_id":"truck-a","status":"ignored","reason":"stale_timestamp","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
+{"type":"ack","version":1,"message_id":"sim-a-000042","entity_id":"entity-a","status":"ignored","reason":"stale_timestamp","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
 ```
 
 Error:
@@ -68,7 +68,7 @@ State schema: `docs/schemas/state.json`.
 
 ### Live events
 
-- Truck update: `docs/schemas/events.truck_updated.json`
+- Entity update: `docs/schemas/events.entity_updated.json`
 - State update: `docs/schemas/events.state_updated.json`
 
 `revision` is monotonic per server instance. Clients should resync on revision gap or `server_instance_id` change.

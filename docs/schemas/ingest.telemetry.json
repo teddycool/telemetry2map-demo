@@ -2,12 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": false,
-  "required": ["type", "version", "message_id", "truck_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"],
+  "required": ["type", "version", "message_id", "entity_id", "timestamp", "position", "speed_kmh", "heading_deg", "info"],
   "properties": {
     "type": {"const": "telemetry"},
     "version": {"const": 1},
     "message_id": {"type": "string", "minLength": 1},
-    "truck_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{1,64}$"},
+    "entity_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{1,64}$"},
     "timestamp": {"type": "string"},
     "position": {
       "type": "object",

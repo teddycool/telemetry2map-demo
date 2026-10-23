@@ -1,4 +1,4 @@
-# Live Truck Map (LAN v1)
+# Live Telemetry Map (LAN v1)
 
 [![CI](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/teddycool/telemetry2map-demo/actions/workflows/ci.yml)
 
@@ -40,10 +40,10 @@ python3 scripts/run_demo.py --down-on-exit
 ## Architecture
 
 1. Producers send telemetry to `/ws/v1/ingest`.
-2. Server validates, stores latest truck state + bounded trace in memory, and assigns a monotonic revision.
+2. Server validates, stores latest entity state + bounded trace in memory, and assigns a monotonic revision.
 3. Browser clients connect to `/ws/v1/events`, receive a full snapshot, then ordered live events.
 4. HTTP APIs (`/api/v1/state`, `/api/v1/settings`) expose diagnostics/configuration.
-5. A simulator publishes deterministic multi-truck telemetry for local demos.
+5. A simulator publishes deterministic multi-entity telemetry for local demos.
 
 ### Important v1 limits
 
@@ -90,7 +90,7 @@ Example telemetry:
   "type": "telemetry",
   "version": 1,
   "message_id": "sim-a-000042",
-  "truck_id": "truck-a",
+  "entity_id": "entity-a",
   "timestamp": "2026-10-23T12:34:56.123Z",
   "position": {"latitude": 57.7201, "longitude": 16.9402},
   "speed_kmh": 42.5,
@@ -102,7 +102,7 @@ Example telemetry:
 Example ACK:
 
 ```json
-{"type":"ack","version":1,"message_id":"sim-a-000042","truck_id":"truck-a","status":"accepted","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
+{"type":"ack","version":1,"message_id":"sim-a-000042","entity_id":"entity-a","status":"accepted","revision":42,"received_at":"2026-10-23T12:34:56.140Z"}
 ```
 
 Example error:
@@ -124,7 +124,7 @@ Example error:
 - `TRACE_MODE`, `TRACE_SECONDS`, `TRACE_SAMPLES`, `STALE_AFTER_SECONDS`
 - `MAX_MESSAGE_BYTES` (default `65536`)
 - `MAX_FUTURE_SKEW_SECONDS` (default `30`)
-- `MAX_TRUCKS` (default `100`)
+- `MAX_ENTITIES` (default `100`)
 - `HARD_TRACE_CAP` (default `3600`)
 
 See `.env.example`.

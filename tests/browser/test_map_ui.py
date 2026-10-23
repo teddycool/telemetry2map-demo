@@ -38,7 +38,7 @@ async def _send_telemetry(base_url: str, info: list[str]) -> None:
         "type": "telemetry",
         "version": 1,
         "message_id": "browser-1",
-        "truck_id": "truck-a",
+        "entity_id": "entity-a",
         "timestamp": "2026-10-23T12:34:56.123Z",
         "position": {"latitude": 57.7201, "longitude": 16.9402},
         "speed_kmh": 42.5,
@@ -82,8 +82,8 @@ def test_info_box_replaces_and_renders_text_safely():
             page.route("**/tile.openstreetmap.org/**", lambda route: route.fulfill(status=200, body=PNG_1X1, headers={"content-type": "image/png"}))
             page.goto(base_url + "/", wait_until="domcontentloaded")
 
-            page.wait_for_function("() => document.querySelector('#truck-select')?.options.length > 0")
-            page.select_option("#truck-select", "truck-a")
+            page.wait_for_function("() => document.querySelector('#entity-select')?.options.length > 0")
+            page.select_option("#entity-select", "entity-a")
 
             page.wait_for_timeout(1200)
             text = page.locator("#info-box").inner_text()

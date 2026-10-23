@@ -4,8 +4,8 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from truckmap.config import Defaults, Limits
-from truckmap.state import AppState, ValidationError
+from map.config import Defaults, Limits
+from map.state import AppState, ValidationError
 
 
 class Clock:
@@ -16,12 +16,12 @@ class Clock:
         return self.now
 
 
-def payload(ts: str, truck_id: str = "truck-a", info: list[str] | None = None) -> dict:
+def payload(ts: str, entity_id: str = "entity-a", info: list[str] | None = None) -> dict:
     return {
         "type": "telemetry",
         "version": 1,
-        "message_id": f"mid-{truck_id}-{ts}",
-        "truck_id": truck_id,
+        "message_id": f"mid-{entity_id}-{ts}",
+        "entity_id": entity_id,
         "timestamp": ts,
         "position": {"latitude": 57.72, "longitude": 16.94},
         "speed_kmh": 42.5,
@@ -37,13 +37,13 @@ def test_ingest_accepts_and_replaces_info_atomically() -> None:
     ack1, event1 = state.ingest_payload(payload("2026-10-23T12:00:00Z", info=["A", "Unicode: åäö"]))
     assert ack1["status"] == "accepted"
     assert event1 is not None
-    assert event1["truck"]["info"] == ["A", "Unicode: åäö"]
+    assert event1["entity"]["info"] == ["A", "Unicode: åäö"]
 
     clock.now += timedelta(seconds=1)
     ack2, event2 = state.ingest_payload(payload("2026-10-23T12:00:01Z", info=[]))
     assert ack2["status"] == "accepted"
     assert event2 is not None
-    assert event2["truck"]["info"] == []
+    assert event2["entity"]["info"] == []
 
 
 def test_stale_timestamp_ignored_without_mutation() -> None:
@@ -78,9 +78,9 @@ def test_seconds_retention_prunes_on_background_tick() -> None:
     event = state.prune_expired()
 
     assert event is not None
-    truck = event["state"]["trucks"][0]
-    assert truck["trace"] == []
-    assert truck["position"]["latitude"] == 57.72
+    entity = event["state"]["entities"][0]
+    assert entity["trace"] == []
+    assert entity["position"]["latitude"] == 57.72
 
 
 def test_samples_retention_and_hard_cap() -> None:
@@ -94,16 +94,16 @@ def test_samples_retention_and_hard_cap() -> None:
         state.ingest_payload(payload(ts))
         clock.now += timedelta(seconds=1)
 
-    truck = state.get_state()["trucks"][0]
-    assert len(truck["trace"]) == 3
+    entity = state.get_state()["entities"][0]
+    assert len(entity["trace"]) == 3
 
 
-def test_max_truck_capacity() -> None:
+def test_max_entity_capacity() -> None:
     clock = Clock(datetime(2026, 10, 23, 12, 0, 0, tzinfo=timezone.utc))
-    limits = Limits(max_trucks=1)
+    limits = Limits(max_entities=1)
     state = AppState(defaults=Defaults(), limits=limits, clock=clock)
 
-    state.ingest_payload(payload("2026-10-23T12:00:00Z", truck_id="truck-a"))
+    state.ingest_payload(payload("2026-10-23T12:00:00Z", entity_id="entity-a"))
     with pytest.raises(ValidationError) as exc:
-        state.ingest_payload(payload("2026-10-23T12:00:01Z", truck_id="truck-b"))
+        state.ingest_payload(payload("2026-10-23T12:00:01Z", entity_id="entity-b"))
     assert exc.value.code == "capacity_exceeded"

@@ -78,7 +78,7 @@ body {
   white-space: pre-wrap;
 }
 
-.truck-label {
+.entity-label {
   background: #fff;
   border: 1px solid #555;
   border-radius: 4px;
@@ -86,7 +86,7 @@ body {
   font-size: 11px;
 }
 
-.truck-marker.stale {
+.entity-marker.stale {
   filter: grayscale(100%);
   opacity: 0.65;
 }

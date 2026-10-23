@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Truck Map</title>
+    <title>Telemetry Map</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/leaflet.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
   </head>
@@ -15,10 +15,10 @@
           <span id="event-status" class="badge muted">No data yet</span>
         </div>
         <label>
-          Truck
-          <select id="truck-select"></select>
+          Entity
+          <select id="entity-select"></select>
         </label>
-        <button id="follow-btn" type="button">Follow truck</button>
+        <button id="follow-btn" type="button">Follow entity</button>
         <label>
           Retention mode
           <select id="trace-mode">
@@ -37,12 +37,12 @@
         <button id="save-settings" type="button">Apply retention</button>
       </header>
       <section id="map" class="map"></section>
-      <aside id="details" class="details">No truck selected.</aside>
+      <aside id="details" class="details">No entity selected.</aside>
       <aside id="info-box" class="info-box"></aside>
     </main>
 
     <script>
-      window.TRUCKMAP_CONFIG = {
+      window.MAP_CONFIG = {
         tileUrl: {{ tile_url|tojson }},
         tileAttribution: {{ tile_attribution|tojson }},
         tileMaxZoom: {{ tile_max_zoom|tojson }}

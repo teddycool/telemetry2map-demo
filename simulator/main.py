@@ -14,7 +14,7 @@ import websockets
 @dataclass
 class SimConfig:
     ingest_url: str = os.getenv("SIM_INGEST_URL", "ws://app:8000/ws/v1/ingest")
-    truck_count: int = int(os.getenv("SIM_TRUCK_COUNT", "3"))
+    entity_count: int = int(os.getenv("SIM_ENTITY_COUNT", "3"))
     interval_seconds: float = float(os.getenv("SIM_INTERVAL_SECONDS", "1.0"))
     seed: int = int(os.getenv("SIM_SEED", "42"))
 
@@ -71,7 +71,7 @@ def _ts_utc_z() -> str:
     return datetime.now(tz=timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
 
 
-async def simulate_truck(config: SimConfig, truck_id: str, route: list[tuple[float, float]], jitter: random.Random) -> None:
+async def simulate_entity(config: SimConfig, entity_id: str, route: list[tuple[float, float]], jitter: random.Random) -> None:
     message_idx = 0
     point_idx = 0
 
@@ -93,8 +93,8 @@ async def simulate_truck(config: SimConfig, truck_id: str, route: list[tuple[flo
                     payload = {
                         "type": "telemetry",
                         "version": 1,
-                        "message_id": f"{truck_id}-{message_idx:06d}",
-                        "truck_id": truck_id,
+                        "message_id": f"{entity_id}-{message_idx:06d}",
+                        "entity_id": entity_id,
                         "timestamp": _ts_utc_z(),
                         "position": {"latitude": round(lat, 6), "longitude": round(lon, 6)},
                         "speed_kmh": round(speed, 2),
@@ -109,15 +109,15 @@ async def simulate_truck(config: SimConfig, truck_id: str, route: list[tuple[flo
                     reply = await ws.recv()
                     try:
                         parsed = json.loads(reply)
-                        print(f"[{truck_id}] {parsed.get('type')} {parsed.get('status', parsed.get('code'))}")
+                        print(f"[{entity_id}] {parsed.get('type')} {parsed.get('status', parsed.get('code'))}")
                     except json.JSONDecodeError:
-                        print(f"[{truck_id}] non-json reply")
+                        print(f"[{entity_id}] non-json reply")
 
                     message_idx += 1
                     point_idx = point_idx + 1 if message_idx % 6 == 0 else point_idx
                     await asyncio.sleep(config.interval_seconds)
         except Exception as exc:
-            print(f"[{truck_id}] disconnected: {exc}")
+            print(f"[{entity_id}] disconnected: {exc}")
             await asyncio.sleep(backoff + jitter.uniform(0.0, 0.4))
             backoff = min(30.0, backoff * 2)
 
@@ -146,10 +146,12 @@ async def main() -> None:
     await wait_for_app_health(base_http)
 
     tasks = []
-    for idx in range(config.truck_count):
+    for idx in range(config.entity_count):
         route = ROUTES[idx % len(ROUTES)]
-        truck_id = f"truck-{chr(ord('a') + idx)}"
-        tasks.append(asyncio.create_task(simulate_truck(config, truck_id, route, random.Random(rng.randint(0, 1_000_000)))))
+        entity_id = f"entity-{chr(ord('a') + idx)}"
+        tasks.append(
+            asyncio.create_task(simulate_entity(config, entity_id, route, random.Random(rng.randint(0, 1_000_000))))
+        )
 
     await asyncio.gather(*tasks)
 

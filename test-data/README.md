@@ -1,7 +1,7 @@
 # Borgholm → Byxelkrok synthetic telemetry
 
 280 messages, exactly 10 seconds apart. Road length: 61.983 km; timeline: 46 min 30 s.
-Vehicle ID: car-01 (the protocol field remains truck_id).
+Vehicle ID: car-01 (the protocol field is entity_id).
 Start: 2026-10-23T10:00:00Z. WGS84; km/h; heading clockwise from north.
 
 JSON is an array; JSONL has one complete WebSocket payload per line. Send each OBJECT separately to /ws/v1/ingest, not the complete array.

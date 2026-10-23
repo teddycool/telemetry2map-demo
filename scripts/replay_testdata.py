@@ -56,7 +56,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--ws-url", default="ws://localhost:8000/ws/v1/ingest", help="Ingest websocket URL")
     parser.add_argument("--interval", type=float, default=10.0, help="Seconds between messages")
-    parser.add_argument("--message-prefix", default="replay-car-01", help="Prefix for generated message_id")
+    parser.add_argument("--message-prefix", default="replay-entity-01", help="Prefix for generated message_id")
     parser.add_argument(
         "--keep-original-timestamps",
         action="store_true",

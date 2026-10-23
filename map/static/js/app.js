@@ -1,6 +1,6 @@
 const wsStatusEl = document.getElementById("ws-status");
 const eventStatusEl = document.getElementById("event-status");
-const truckSelectEl = document.getElementById("truck-select");
+const entitySelectEl = document.getElementById("entity-select");
 const followButtonEl = document.getElementById("follow-btn");
 const detailsEl = document.getElementById("details");
 const infoBoxEl = document.getElementById("info-box");
@@ -10,28 +10,28 @@ const traceSamplesEl = document.getElementById("trace-samples");
 const saveSettingsEl = document.getElementById("save-settings");
 
 const map = L.map("map", { zoomControl: true }).setView([57.72, 16.94], 11);
-L.tileLayer(window.TRUCKMAP_CONFIG.tileUrl, {
-  attribution: window.TRUCKMAP_CONFIG.tileAttribution,
-  maxZoom: window.TRUCKMAP_CONFIG.tileMaxZoom,
+L.tileLayer(window.MAP_CONFIG.tileUrl, {
+  attribution: window.MAP_CONFIG.tileAttribution,
+  maxZoom: window.MAP_CONFIG.tileMaxZoom,
 }).addTo(map);
 
 const appState = {
   serverInstanceId: null,
   revision: 0,
   settings: null,
-  trucks: new Map(),
-  selectedTruckId: null,
+  entities: new Map(),
+  selectedEntityId: null,
   followSelected: true,
   markerById: new Map(),
   lineById: new Map(),
   localStateLoaded: false,
 };
 
-const truckIcon = L.icon({
-  iconUrl: "/static/img/truck.svg",
+const entityIcon = L.icon({
+  iconUrl: "/static/img/entity.svg",
   iconSize: [28, 28],
   iconAnchor: [14, 14],
-  className: "truck-marker",
+  className: "entity-marker",
 });
 
 let ws = null;
@@ -56,9 +56,9 @@ function stableColor(id) {
   return `hsl(${hue} 75% 45%)`;
 }
 
-function isStale(truck) {
+function isStale(entity) {
   if (!appState.settings) return false;
-  const ageSec = (nowMs() - parseIso(truck.received_at)) / 1000;
+  const ageSec = (nowMs() - parseIso(entity.received_at)) / 1000;
   return ageSec > appState.settings.stale_after_seconds;
 }
 
@@ -72,40 +72,34 @@ function setEventStatus(text) {
 }
 
 function renderSelect() {
-  const ids = [...appState.trucks.keys()].sort();
-  truckSelectEl.innerHTML = "";
+  const ids = [...appState.entities.keys()].sort();
+  entitySelectEl.innerHTML = "";
   if (ids.length === 0) {
     const opt = document.createElement("option");
     opt.value = "";
-    opt.textContent = "No trucks";
-    truckSelectEl.append(opt);
+    opt.textContent = "No entities";
+    entitySelectEl.append(opt);
     return;
   }
   for (const id of ids) {
     const opt = document.createElement("option");
     opt.value = id;
     opt.textContent = id;
-    if (id === appState.selectedTruckId) opt.selected = true;
-    truckSelectEl.append(opt);
+    if (id === appState.selectedEntityId) opt.selected = true;
+    entitySelectEl.append(opt);
   }
 }
 
-function markerHtml(truckId, stale) {
-  const color = stableColor(truckId);
-  const staleClass = stale ? " stale" : "";
-  return `<div class="truck-marker${staleClass}" style="transform: rotate(0deg)"></div>`;
-}
-
-function ensureTruckLayer(truck) {
-  const id = truck.truck_id;
+function ensureEntityLayer(entity) {
+  const id = entity.entity_id;
   let marker = appState.markerById.get(id);
-  const latLng = [truck.position.latitude, truck.position.longitude];
+  const latLng = [entity.position.latitude, entity.position.longitude];
   const color = stableColor(id);
 
   if (!marker) {
-    marker = L.marker(latLng, { icon: truckIcon }).addTo(map);
-    marker.bindTooltip(id, { permanent: true, direction: "top", className: "truck-label" });
-    marker.on("click", () => selectTruck(id, true));
+    marker = L.marker(latLng, { icon: entityIcon }).addTo(map);
+    marker.bindTooltip(id, { permanent: true, direction: "top", className: "entity-label" });
+    marker.on("click", () => selectEntity(id, true));
     appState.markerById.set(id, marker);
   } else {
     marker.setLatLng(latLng);
@@ -114,12 +108,12 @@ function ensureTruckLayer(truck) {
   const markerElement = marker.getElement();
   if (markerElement) {
     markerElement.style.transformOrigin = "center";
-    markerElement.style.rotate = `${truck.heading_deg}deg`;
-    markerElement.classList.toggle("stale", isStale(truck));
-    markerElement.style.filter = id === appState.selectedTruckId ? "drop-shadow(0 0 4px #111)" : "none";
+    markerElement.style.rotate = `${entity.heading_deg}deg`;
+    markerElement.classList.toggle("stale", isStale(entity));
+    markerElement.style.filter = id === appState.selectedEntityId ? "drop-shadow(0 0 4px #111)" : "none";
   }
 
-  const linePoints = truck.trace.map((p) => [p.latitude, p.longitude]);
+  const linePoints = entity.trace.map((p) => [p.latitude, p.longitude]);
   let polyline = appState.lineById.get(id);
   if (!polyline) {
     polyline = L.polyline(linePoints, { color, weight: 3, opacity: 0.7 }).addTo(map);
@@ -127,22 +121,22 @@ function ensureTruckLayer(truck) {
   } else {
     polyline.setLatLngs(linePoints);
   }
-  polyline.setStyle({ weight: id === appState.selectedTruckId ? 5 : 3, opacity: id === appState.selectedTruckId ? 1 : 0.7 });
+  polyline.setStyle({ weight: id === appState.selectedEntityId ? 5 : 3, opacity: id === appState.selectedEntityId ? 1 : 0.7 });
 }
 
 function renderMap() {
-  for (const truck of appState.trucks.values()) {
-    ensureTruckLayer(truck);
+  for (const entity of appState.entities.values()) {
+    ensureEntityLayer(entity);
   }
 
-  if (!appState.selectedTruckId && appState.trucks.size > 0) {
-    selectTruck([...appState.trucks.keys()].sort()[0], true);
+  if (!appState.selectedEntityId && appState.entities.size > 0) {
+    selectEntity([...appState.entities.keys()].sort()[0], true);
   }
 
-  if (appState.followSelected && appState.selectedTruckId && appState.trucks.has(appState.selectedTruckId)) {
-    const truck = appState.trucks.get(appState.selectedTruckId);
+  if (appState.followSelected && appState.selectedEntityId && appState.entities.has(appState.selectedEntityId)) {
+    const entity = appState.entities.get(appState.selectedEntityId);
     programmaticMove = true;
-    map.panTo([truck.position.latitude, truck.position.longitude], { animate: true });
+    map.panTo([entity.position.latitude, entity.position.longitude], { animate: true });
     setTimeout(() => {
       programmaticMove = false;
     }, 0);
@@ -150,33 +144,33 @@ function renderMap() {
 }
 
 function renderDetails() {
-  const truck = appState.selectedTruckId ? appState.trucks.get(appState.selectedTruckId) : null;
-  if (!truck) {
-    detailsEl.textContent = "No truck selected.";
+  const entity = appState.selectedEntityId ? appState.entities.get(appState.selectedEntityId) : null;
+  if (!entity) {
+    detailsEl.textContent = "No entity selected.";
     infoBoxEl.textContent = "";
     return;
   }
 
-  const sourceTime = new Date(truck.timestamp);
-  const receivedTime = new Date(truck.received_at);
+  const sourceTime = new Date(entity.timestamp);
+  const receivedTime = new Date(entity.received_at);
   const telemetryAge = ((Date.now() - sourceTime.getTime()) / 1000).toFixed(1);
 
   detailsEl.textContent = [
-    `Truck: ${truck.truck_id}${isStale(truck) ? " (stale)" : ""}`,
-    `Lat/Lon: ${truck.position.latitude.toFixed(6)}, ${truck.position.longitude.toFixed(6)}`,
-    `Speed: ${truck.speed_kmh.toFixed(1)} km/h`,
-    `Heading: ${truck.heading_deg.toFixed(1)}°`,
-    `Source timestamp (UTC): ${truck.timestamp}`,
+    `Entity: ${entity.entity_id}${isStale(entity) ? " (stale)" : ""}`,
+    `Lat/Lon: ${entity.position.latitude.toFixed(6)}, ${entity.position.longitude.toFixed(6)}`,
+    `Speed: ${entity.speed_kmh.toFixed(1)} km/h`,
+    `Heading: ${entity.heading_deg.toFixed(1)}°`,
+    `Source timestamp (UTC): ${entity.timestamp}`,
     `Source timestamp (local): ${sourceTime.toLocaleString()}`,
     `Last server receipt (local): ${receivedTime.toLocaleString()}`,
     `Telemetry age: ${telemetryAge} s`,
   ].join("\n");
 
-  infoBoxEl.textContent = truck.info.join("\n");
+  infoBoxEl.textContent = entity.info.join("\n");
 }
 
-function selectTruck(id, resumeFollow) {
-  appState.selectedTruckId = id;
+function selectEntity(id, resumeFollow) {
+  appState.selectedEntityId = id;
   if (resumeFollow) {
     appState.followSelected = true;
   }
@@ -189,17 +183,17 @@ function setStateFromSnapshot(state) {
   appState.serverInstanceId = state.server_instance_id;
   appState.revision = state.revision;
   appState.settings = state.settings;
-  appState.trucks.clear();
-  for (const truck of state.trucks) {
-    appState.trucks.set(truck.truck_id, truck);
+  appState.entities.clear();
+  for (const entity of state.entities) {
+    appState.entities.set(entity.entity_id, entity);
   }
 
   traceModeEl.value = state.settings.trace_mode;
   traceSecondsEl.value = state.settings.trace_seconds;
   traceSamplesEl.value = state.settings.trace_samples;
 
-  if (appState.selectedTruckId && !appState.trucks.has(appState.selectedTruckId)) {
-    appState.selectedTruckId = null;
+  if (appState.selectedEntityId && !appState.entities.has(appState.selectedEntityId)) {
+    appState.selectedEntityId = null;
   }
 
   renderSelect();
@@ -230,15 +224,15 @@ function applyEvent(event) {
 
   appState.revision = event.revision;
 
-  if (event.type === "truck_updated") {
-    appState.trucks.set(event.truck.truck_id, event.truck);
-    if (!appState.selectedTruckId) {
-      appState.selectedTruckId = event.truck.truck_id;
+  if (event.type === "entity_updated") {
+    appState.entities.set(event.entity.entity_id, event.entity);
+    if (!appState.selectedEntityId) {
+      appState.selectedEntityId = event.entity.entity_id;
     }
     renderSelect();
     renderMap();
     renderDetails();
-    setEventStatus(`Truck updated @ rev ${event.revision}`);
+    setEventStatus(`Entity updated @ rev ${event.revision}`);
   } else if (event.type === "state_updated") {
     setStateFromSnapshot(event.state);
     setEventStatus(`State updated @ rev ${event.revision}`);
@@ -362,9 +356,9 @@ async function saveSettings() {
   setEventStatus("Settings applied globally");
 }
 
-truckSelectEl.addEventListener("change", () => {
-  if (truckSelectEl.value) {
-    selectTruck(truckSelectEl.value, true);
+entitySelectEl.addEventListener("change", () => {
+  if (entitySelectEl.value) {
+    selectEntity(entitySelectEl.value, true);
   }
 });
 
@@ -386,10 +380,10 @@ map.on("movestart", () => {
 setInterval(() => {
   renderDetails();
   for (const [id, marker] of appState.markerById.entries()) {
-    const truck = appState.trucks.get(id);
-    if (!truck) continue;
+    const entity = appState.entities.get(id);
+    if (!entity) continue;
     const el = marker.getElement();
-    if (el) el.classList.toggle("stale", isStale(truck));
+    if (el) el.classList.toggle("stale", isStale(entity));
   }
 }, 1000);
 
