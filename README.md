@@ -12,8 +12,8 @@ A local-network telemetry to map demo using Flask + Flask-Sock native RFC6455 we
 ## Easiest GitHub run (app + test-data replay + browser)
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd <YOUR_REPO_FOLDER>
+git clone https://github.com/teddycool/telemetry2map-demo
+cd telemetry2map-demo
 python3 scripts/run_demo.py
 ```
 
